@@ -105,7 +105,9 @@
 
             $matchMade = $this->matchModel->createMatches($match, $user, $role->Role_ID);
 
-            redirect("matches/displaymatches");
+            // redirect("matches/displaymatches");
+            redirect("Buddies");
+
 
           }
           unset($myInterestsArray);
