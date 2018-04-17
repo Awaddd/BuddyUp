@@ -63,7 +63,7 @@ $("#send-message-form").submit(function (event){
       $("#").html("Failed to send");
     } else {
       console.log(response);
-      $("#chat-content").fadeIn().html(response);
+      $(".chatbox").fadeIn().html(response);
     }
   });
 
