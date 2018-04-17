@@ -69,7 +69,7 @@ body, html{
   border: 5px solid #e3e3e3;
 }
 .message{
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .time{
@@ -85,7 +85,8 @@ body, html{
 }
 
 .msg__user{
-  font-size: 1rem;
+  font-size: 1.2rem;
+  display: grid;
 }
 
 .message{
