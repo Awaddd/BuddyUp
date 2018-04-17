@@ -14,19 +14,6 @@
 
     }
 
-    // public function index(){
-    //
-    //     $this->displayMessages();
-    //     $data = [
-    //
-    //     ];
-    //
-    //
-    // $this->view('messages/instantmessenger', $data);
-    //
-    // }
-
-
     // Load messages
     public function index(){
       if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -96,5 +83,50 @@
       }
     }
 
+    public function sendMessage2(){
+      echo "AYY WE MADE IT <br>";
+
+      if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+        echo "jumping in post check";
+
+        if (!$_POST['newMessage'] && !$_POST['msgReceiver']) {
+          echo "fail";
+        } else {
+          echo "GOT THE NEW MESSAGE AND THE RECEIVER";
+          $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+          $receiver = trim($_POST['msgReceiver']);
+          $message = trim($_POST['newMessage']);
+          $user = $_SESSION['User_ID'];
+
+          echo $receiver;
+          echo $message;
+          
+          $convo = $this->msgModel->getConversation($user, $receiver);
+
+          if ($convo) {
+            echo "convo exists - inserting into previ";
+            // Conversation exists, insert into previous convo
+
+            // $convo_id = $convo->Conversation_ID;
+            // $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
+
+            // redirect("Messages");
+
+          } else {
+
+            // Conversation does not exist, create new then insert
+            echo "Convo not exist, inserting into new";
+            // $this->msgModel->startConvo();
+            // $convo_id = $this->msgModel->getLastConvo();
+            // $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
+
+            // redirect("Messages");
+
+          }
+        }
+    }
   }
+}
 ?>

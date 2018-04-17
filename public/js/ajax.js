@@ -34,3 +34,45 @@ $("#add-interest-form").submit(function (event){
     alert("Request failed: " + status);
   });
 });
+
+
+
+$("#send-message-form").submit(function (event){
+  event.preventDefault();
+
+  var action = $("#send-message-form").attr("action");
+  var type = $("#send-message-form").attr("method");
+  var message = $("#new-message").val();
+  var receiver = $("#message-receiver").val();
+  console.log(message);
+  console.log(receiver);
+
+  var request = $.ajax({
+    url: action,
+    type: type,
+    data: {
+      newMessage : message,
+      msgReceiver : receiver
+    },
+  });
+
+  request.done(function(response){
+    $("#send-message-form").trigger("reset");
+    if (response == "fail") {
+      console.log(response);
+
+      $("#").html("Failed to send");
+    } else {
+      console.log(response);
+      $("#chat-content").fadeIn().html(response);
+      $('#chat-content').animate({
+          scrollTop: $('#chat-content').get(0).scrollHeight
+      }, 1500);
+    }
+  });
+
+  request.fail(function(jqXHR, status){
+    alert("Request failed: " + status);
+  });
+
+});

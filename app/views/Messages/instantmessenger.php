@@ -22,7 +22,7 @@ require APPROOT . '/views/inc/header.php';
           $date = DateTime::createFromFormat( 'Y-m-d H:i:s', $msg->MessageDate);
           ?>
 
-          <div id="chatcontent">
+          <div id="chat-content">
             <?php if ($msg->Sender_ID == $user): ?>
               <!--  Sender -->
               <div class="bubble msg__sending">
@@ -61,9 +61,9 @@ require APPROOT . '/views/inc/header.php';
 
       </div>
     <div class="chat__keyboard">
-      <form action="<?php echo URLROOT?>/messages/sendmessage" method="post">
-        <input type="hidden" name="receiver" value="<?php echo $data['receiver'] ?>">
-        <input type="text" class="chat__keyboard__text" name="message">
+      <form id="send-message-form" action="<?php echo URLROOT?>/messages/sendmessage2" method="post">
+        <input type="hidden" name="receiver" id="message-receiver" value="<?php echo $data['receiver'] ?>">
+        <input type="text" class="chat__keyboard__text" name="message" id="new-message">
         <input type="submit" value="SEND" class="btn-send">
       </form>
     </div>

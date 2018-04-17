@@ -40,10 +40,10 @@ body, html{
   background: #fff;
   max-height: inherit;
   overflow-y:auto;
+  background: #c9c9c9;
 }
 
 .chat__keyboard{
-  background: #c9c9c9;
   display: grid;
   grid-template-columns: 1fr max-content;
   align-content: center;
