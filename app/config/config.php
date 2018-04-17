@@ -27,6 +27,6 @@ define('DB_USER', 'root');
 define('DB_PASS', 'Awad135790');
 define('DB_NAME', 'fypdb');
 
-define('URLROOT', 'https://awadini.herokuapp.com/');
+define('URLROOT', 'https://awadini.herokuapp.com');
 
 ?>
