@@ -47,7 +47,7 @@
         $this->view('Messages/instantmessenger', $data);
 
     } else {
-      redirect("home");
+      redirect("Buddies");
     }
   }
 
