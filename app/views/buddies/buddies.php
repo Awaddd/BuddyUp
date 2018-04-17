@@ -33,7 +33,6 @@ require APPROOT . '/views/inc/header.php';
         <div class="buddy__card__btn">
           <form  action="<?php echo URLROOT?>/messages" method="post">
             <input type="hidden" name="receiver" value="<?php echo $match->User_ID ?>">
-            <?php echo $match->User_ID ?>
             <button class="btn-same c1" type="submit" name="submit">MESSAGE</button>
           </form>
           <!-- <i class="fa fa-comments"></i> -->
