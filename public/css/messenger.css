@@ -74,19 +74,24 @@ body, html{
 
 .time{
   color: #959595;
+  font-size: 0.85rem;
+  justify-self: end;
 }
 
 .msg__sending{
   color: #5e50c9;
+  justify-self: start;
 }
 
 .msg__receiving{
   color: #7ad461;
+  justify-self: start;
 }
 
 .msg__user{
   font-size: 1.2rem;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .message{
