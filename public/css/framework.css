@@ -1,0 +1,524 @@
+/* ---------------------MINI FRAMEWORK------------------------- */
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto';
+    /*overflow: hidden;*/
+    /*box-sizing: border-box;*/
+  }
+  p {
+    padding: 0;
+    /* margin: 0; */
+  }
+  a{
+    text-decoration: none;
+  }
+  a:visited{
+    color: #333;
+  }
+
+
+  li{
+    list-style: none;
+  }
+
+  .current_tab{
+    background: #5683FF;
+  }
+
+  /*container stuff*/
+  .container {
+    box-sizing: border-box;
+  }
+  @media only screen and (min-width: 550px) {
+    /*.container {max-width: 1140px;}*/
+    .container {
+      margin: 0 auto;
+      /*height: auto;*/
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    /*.container {max-width: 1140px;}*/
+    .container {
+      margin: 0 auto;
+      max-width: 1000px;
+      /*height: auto;*/
+    }
+  }
+
+  @media only screen and (min-width: 850px) {
+    .container {
+      margin: 0 auto;
+     /*max-width: 750px;*/
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    /*.container {max-width: 960px;}*/
+    .container {
+      max-width: 960px;
+      margin: 30px auto 0 auto;
+      box-sizing: border-box;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .container {
+      max-width: 1600px;
+      margin: 50px auto 0 auto;
+      box-sizing: border-box;}
+  }
+  @media only screen and (min-width: 1400px) {
+    .container {
+      min-width: 1224px;
+      margin: 50px auto 0 auto;
+      box-sizing: border-box;}
+  }
+
+
+  /*container stuff end*/
+
+/*buttons*/
+  button, input[type=submit]{
+    cursor: pointer;
+  }
+
+  .btn{
+    background: #0099ff;
+    color: white;
+    transition: 0.2s;
+    /*padding: 15px 25px;*/
+    padding: 8px 25px;
+
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 1.5px 1px rgba(0, 0, 0, 0.23);
+  }
+
+  .btnb{
+    background: #0099ff;
+    color: white;
+    transition: 0.2s;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 1.5px 1px rgba(0, 0, 0, 0.23);
+  }
+
+  .btn-same{
+    min-width: 150px;
+    color: #fff;
+    font-size: 0.95rem;
+    border-radius: 2px;
+    border: none;
+    padding: 10px 30px;
+    background: #5e50c9;
+  }
+
+  .newBtn{
+    padding: 13px 25px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+  }
+
+  .homeBtn{
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .homeBtn:hover{
+    border: 1px solid #2b9380;
+    color: #2b9380;
+    padding: 14px 26px;
+    transition: all 0.1s ease-out;
+  }
+
+  .logout{
+    border: 1px solid #F56060;
+    color: #F56060;
+    background: 0;
+  }
+
+  .logout:hover{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 14px 30px;
+    transition: all 0.1s ease-out;
+  }
+
+  .c1{
+    /* background: rgb(245, 137, 89); */
+    /* background: rgb(210, 159, 21) */
+    background: rgb(93, 9, 215)
+  }
+
+  .c2{
+    background: rgb(43, 147, 128);
+  }
+
+  .c3{
+    background: #5683FF;
+  }
+
+  .c1:hover, .c2:hover{
+    filter: brightness(85%);
+  }
+
+  .xl{
+    padding: 15px 30px;
+    font-size: 1.09rem;
+    border-radius: 3px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .btno{
+    background: #fff;
+    color: #5683FF;
+    font-size: 1.1rem;
+    border: 1px solid #fff;
+  }
+
+  .btno:hover{
+    border: 1px solid #fff;
+    background: 0;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  .btno_col{
+    background: #7b29f2;
+    color: #fff;
+    font-size: 1.1rem;
+    border: 1px solid #7b29f2;
+  }
+
+  .btno_col:hover{
+    filter: brightness(115%);
+  }
+  .btno_grey{
+    background: #1f1f1f;
+    color: #fff;
+    font-size: 1.1rem;
+    border: 1px solid #1f1f1f;
+  }
+
+  .btno_grey:hover{
+    filter: brightness(115%);
+  }
+
+  .btn-send{
+    color: #fff;
+    font-size: 14px;;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 30px;
+    background: #5e50c9;
+  }
+
+  .blue{
+    background: #3949AB;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  .blue:hover{
+    background: #2a3998;
+  }
+
+  .green{
+    background: #3A9EA8;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  .green:hover{
+    background: #25858f;
+  }
+
+  .cancel{
+      background: #f7f7f7;
+      color: #514545;
+  }
+  .danger{
+      /*background: #f7f7f7;*/
+      color: #fff;
+      background: linear-gradient(
+          160deg,
+          /*rgba(98, 47, 200, 0.9),
+          rgba(200, 17, 212, 0.9)*/
+          rgba(246, 2, 2, 0.93),
+          rgba(186, 18, 0, 0.89));
+  }
+  .glow{
+      color: #fff;
+      background: linear-gradient(
+          160deg,
+          rgba(8, 129, 60, 0.91),
+          rgba(1, 110, 83, 0.99)
+          );
+  }
+  .forest{
+    background: linear-gradient(
+        160deg,
+        /*rgba(98, 47, 200, 0.9),
+        rgba(200, 17, 212, 0.9)*/
+        rgba(59, 145, 3, 0.9),
+        rgba(5, 149, 33, 0.8));
+  }
+  .soft{
+    background: linear-gradient(
+        160deg,
+        /*rgba(98, 47, 200, 0.9),
+        rgba(200, 17, 212, 0.9)*/
+        rgba(158, 37, 146, 0.87),
+        rgba(83, 9, 129, 0.85));
+  }
+  .success{
+    background: #0082c8;  /* fallback for old browsers */
+  }
+  .control {
+    /*background: #34e89e;*/
+    background: #56ab2f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1f9c00, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .waves {
+    background: #4F12D2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4F12D2, #3e03bd);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4F12D2, #3e03bd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .solid {
+    background: rgba(#38edc7, 0.85);
+  }
+  .test{
+    background: #3949AB;
+  }
+
+/*input*/
+  .input-group{
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    padding: 0;
+    border: 0;
+  }
+  .input-group *{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .input-group span{
+    background: #2b9380;
+    border-radius: 3px 0 0 3px;
+  }
+  .input-group input{
+    border-radius: 0 3px 3px 0;
+    border: 0;
+  }
+
+  .input-group textarea{
+    border-radius: 0 3px 3px 0;
+    border: 0;
+    outline: 0;
+  }
+
+  .input-group textarea:hover{
+    outline: 0;
+    border: 0;
+  }
+
+  .c-def-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: solid 1px #d2d2d2;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.03), 0 1px 1px rgba(0, 0, 0, 0.03);
+  }
+  .c-def-input:focus {
+    color: #495057;
+    border: 2px solid #80bdff;
+    outline: none;
+  }
+
+  textarea {
+    resize: vertical;
+    font-family: 'Roboto';
+  }
+
+/*Paragraphs*/
+.subtletext{
+  font-size: 15px;
+  color: #737373;
+}
+.boldtext{
+  /*font-weight: 900;*/
+  font-weight: 600;
+  font-size: 15px;
+}
+.finetext{
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(70, 70, 70);
+}
+
+/*Paragraph end*/
+/*Banners*/
+
+.banner{
+  background: linear-gradient(
+      160deg,
+      /*rgba(98, 47, 200, 0.9),
+      rgba(200, 17, 212, 0.9)*/
+      rgba(52, 123, 221, 0.8),
+      rgba(52, 123, 221, 0.8)
+    ),
+    url(
+      http://www.powerpointhintergrund.com/uploads/2017/06/abstract-polygons-wallpaper-by-cratemuncher-on-deviantart-19.png
+      );
+      display: grid;
+}
+.banner-glow{
+  background: linear-gradient(
+      160deg,
+      /*rgba(98, 47, 200, 0.9),
+      rgba(200, 17, 212, 0.9)*/
+      rgba(59, 145, 3, 0.9),
+      rgba(5, 149, 33, 0.8)
+    ),
+    url(
+      http://www.powerpointhintergrund.com/uploads/2017/06/abstract-polygons-1920-1080-wallpaper-hd-background-hd-screensavers--23.png
+      );
+      display: grid;
+
+}
+.banner-blaze{
+  background: linear-gradient(
+      160deg,
+      /*rgba(98, 47, 200, 0.9),
+      rgba(200, 17, 212, 0.9)*/
+      rgba(255, 98, 1, 0.92),
+      rgba(207, 83, 4, 0.7)
+    ),
+    url(
+      http://www.powerpointhintergrund.com/uploads/2017/06/abstract-polygons-1920-1080-wallpaper-hd-background-hd-screensavers--23.png
+      );
+      display: grid;
+}
+.banner-danger{
+  background: linear-gradient(
+      160deg,
+      /*rgba(98, 47, 200, 0.9),
+      rgba(200, 17, 212, 0.9)*/
+      rgba(246, 62, 2, 0.93),
+      rgba(186, 18, 0, 0.89)
+    ),
+    url(
+      http://www.powerpointhintergrund.com/uploads/2017/06/abstract-polygons-1920-1080-wallpaper-hd-background-hd-screensavers--23.png
+      );
+      display: grid;
+}
+
+/*Banners end*/
+
+.title{
+  font-size: 3rem;
+  justify-self: cover;
+  text-align: center;
+  color: #fff;
+}
+
+/*Cards*/
+
+.card{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  display: grid;
+  /*grid-template-rows: 1fr 3fr; Why is this even here Awad?*/
+  border-radius: 3px;
+}
+
+.card__title{
+  margin: 0;
+  color: #fff;
+  display: grid;
+  font-size: 25px;
+  justify-self: center;
+  align-self: center;
+  border-radius: 5px 5px 0 0;
+}
+.card__content{
+  background: #ffffff;
+}
+.card__text{
+  padding: 0 12px;
+}
+
+/*Cards*/
+
+/* Backgrounds */
+.background-purple-gradient{
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom right, #35087A, #1B043D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom right, #35087A, #1B043D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* display: grid;
+  min-height: 100%; */
+}
+  /* ------------------------------------------------------------ */
+
+/* MODALS */
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal__content{
+  background-color: #5849CE;
+  margin: 10% auto;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:openModal;
+  animation-duration: 0.5s;
+}
+
+.modal__header{
+  background: #5849CE;
+  padding: 15px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 1fr max-content;
+}
+
+.modal__exit{
+  color: #fff;
+  font-size: 30px;
+}
+.modal__exit:hover, .modal__exit:focus{
+  color: rgb(43, 147, 128);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__body{
+  padding: 15px;
+}
+@keyframes openModal {
+  from{ opacity: 0}
+  to{ opacity: 1}
+}

@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+
+}
+
+a{
+  text-decoration: none;
+}
+/*Wrapping class*/
+.nav {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+/*logo*/
+.nav__logo{
+  /*stole this gradient off css tricks =( */
+  background: -webkit-linear-gradient(rgb(6, 73, 255), rgb(102, 147, 212));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+}
+.logo__up{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/*links*/
+.nav__links{
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  grid-gap: 15px;
+  align-self: center;
+  align-items: center;
+}
+
+.nav__links a:not(.logout){
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+@media screen and  (max-width:450px) {
+
+  .nav__logo{
+    justify-self: center;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .nav__links{
+    padding-left: 10px;
+  }
+
+}
