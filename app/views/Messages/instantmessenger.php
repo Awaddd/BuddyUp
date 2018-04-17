@@ -1,4 +1,5 @@
 <?php
+//header
 require APPROOT . '/views/inc/header.php';
 ?>
 
