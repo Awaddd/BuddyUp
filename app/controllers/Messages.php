@@ -84,16 +84,13 @@
     }
 
     public function sendMessage2(){
-      echo "AYY WE MADE IT <br>";
 
       if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-        echo "jumping in post check";
 
         if (!$_POST['newMessage'] && !$_POST['msgReceiver']) {
           echo "fail";
         } else {
-          echo "GOT THE NEW MESSAGE AND THE RECEIVER <br>";
           $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
           $receiver = trim($_POST['msgReceiver']);
@@ -106,7 +103,7 @@
           $convo = $this->msgModel->getConversation($user, $receiver);
 
           if ($convo) {
-            echo "convo exists - inserting into previ";
+            echo "convo exists - inserting into previous convo";
             // Conversation exists, insert into previous convo
 
             // $convo_id = $convo->Conversation_ID;

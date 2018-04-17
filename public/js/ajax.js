@@ -60,7 +60,6 @@ $("#send-message-form").submit(function (event){
     $("#send-message-form").trigger("reset");
     if (response == "fail") {
       console.log(response);
-
       $("#").html("Failed to send");
     } else {
       console.log(response);
