@@ -66,7 +66,12 @@
           // Conversation exists, insert into previous convo
           $convo_id = $convo->Conversation_ID;
           $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
-          redirect("Messages");
+
+          $data = [
+
+          ];
+
+          $this->view('Messages/instantmessenger', $data);
 
 
         } else{
@@ -75,7 +80,12 @@
           $this->msgModel->startConvo();
           $convo_id = $this->msgModel->getLastConvo();
           $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
-          redirect("Messages");
+
+          $data = [
+
+          ];
+
+          $this->view('Messages/instantmessenger', $data);
 
 
         }
