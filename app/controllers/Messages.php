@@ -97,26 +97,28 @@
           $message = trim($_POST['newMessage']);
           $user = $_SESSION['User_ID'];
 
-          echo "Receiver:" . $receiver . " msg: ";
+          echo "Receiver:" . $receiver . "<br> msg: ";
           echo $message . "<br>";
 
           $convo = $this->msgModel->getConversation($user, $receiver);
 
-          if ($convo) {
-            echo "convo exists - inserting into previous convo";
-            // Conversation exists, insert into previous convo
+          if (empty($convo)) {
 
-            // $convo_id = $convo->Conversation_ID;
-            // $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
-
-            // redirect("Messages");
-
-          } else {
             echo "Convo does not exist - creating new";
             // Conversation does not exist, create new then insert
 
             // $this->msgModel->startConvo();
             // $convo_id = $this->msgModel->getLastConvo();
+            // $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
+
+            // redirect("Messages");
+
+          } else {
+
+            echo "convo exists - inserting into previous convo";
+            // Conversation exists, insert into previous convo
+
+            // $convo_id = $convo->Conversation_ID;
             // $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
 
             // redirect("Messages");
