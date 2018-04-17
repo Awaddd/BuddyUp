@@ -93,16 +93,16 @@
         if (!$_POST['newMessage'] && !$_POST['msgReceiver']) {
           echo "fail";
         } else {
-          echo "GOT THE NEW MESSAGE AND THE RECEIVER";
+          echo "GOT THE NEW MESSAGE AND THE RECEIVER <br>";
           $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
           $receiver = trim($_POST['msgReceiver']);
           $message = trim($_POST['newMessage']);
           $user = $_SESSION['User_ID'];
 
-          echo $receiver;
-          echo $message;
-          
+          echo "Receiver:" . $receiver . " msg: ";
+          echo $message . "<br>";
+
           $convo = $this->msgModel->getConversation($user, $receiver);
 
           if ($convo) {
@@ -114,7 +114,7 @@
 
             // redirect("Messages");
 
-          } else {
+          } else if(empty($convo)){
 
             // Conversation does not exist, create new then insert
             echo "Convo not exist, inserting into new";
