@@ -66,7 +66,8 @@
           // Conversation exists, insert into previous convo
           $convo_id = $convo->Conversation_ID;
           $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
-          echo "sent";
+          redirect("Messages");
+
 
         } else{
 
@@ -74,7 +75,8 @@
           $this->msgModel->startConvo();
           $convo_id = $this->msgModel->getLastConvo();
           $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
-          echo "sent";
+          redirect("Messages");
+
 
         }
 
