@@ -13,10 +13,6 @@ html, body{
   a{
     text-decoration: none;
   }
-  a:visited{
-    color: #333;
-  }
-
 
   li{
     list-style: none;

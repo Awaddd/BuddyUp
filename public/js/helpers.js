@@ -82,15 +82,6 @@ manage_account_exit.on('click', function(){
 
 // Highlight current page link
 
-//Home links
-$(document).ready(function() {
-    $(".home__links [href]").each(function() {
-        if (this.href == window.location.href) {
-            $(this).addClass("current");
-        }
-    });
-});
-
 //Nav links
 $(document).ready(function() {
     $(".nav__links [href]").each(function() {
