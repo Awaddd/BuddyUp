@@ -17,7 +17,8 @@
                         ON messages.Receiver_ID = b.User_ID
                         WHERE (messages.Sender_ID = :receiver
                         AND Receiver_ID = :user) OR
-                        (messages.Receiver_ID = :receiver AND Sender_ID = :user)");
+                        (messages.Receiver_ID = :receiver AND Sender_ID = :user)
+                        ORDER BY Message_ID ASC");
 
       $this->db->bind(":user", $user);
       $this->db->bind(":receiver", $receiver);
