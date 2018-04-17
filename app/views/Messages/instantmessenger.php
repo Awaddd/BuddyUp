@@ -28,26 +28,28 @@ require APPROOT . '/views/inc/header.php';
               <div class="bubble msg__sending">
                 <div class="msg__user">
                   <?php echo $msg->Sender ?>
+                  <span class="time">
+                    <?php echo $date->format('H:i'); ?>
+                  </span>
                 </div>
                 <div class="message">
                   <?php echo $msg->message ?>
                 </div>
-                <div class="time">
-                  <?php echo $date->format('H:i'); ?>
-                </div>
+
               </div>
             <?php else: ?>
               <!--  Receiver -->
               <div class="bubble msg__receiving">
                 <div class="msg__user">
                   <?php echo $msg->Sender ?>
+                  <span class="time">
+                    <?php echo $date->format('H:i'); ?>
+                  </span>
                 </div>
                 <div class="message">
                   <?php echo $msg->message ?>
                 </div>
-                <div class="time">
-                  <?php echo $date->format('H:i'); ?>
-                </div>
+
 
               </div>
             <?php endif; ?>

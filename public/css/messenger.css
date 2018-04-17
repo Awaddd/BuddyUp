@@ -79,10 +79,15 @@ body, html{
 .msg__sending{
   color: #5e50c9;
 }
+
 .msg__receiving{
   color: #7ad461;
 }
+
 .msg__user{
-  color: #000000;
   font-size: 1rem;
+}
+
+.message{
+  color: #000000;
 }
