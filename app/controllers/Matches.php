@@ -117,7 +117,9 @@
       }
 
     }
-      redirect("matches/displaymatches");
+      // redirect("matches/displaymatches");
+      redirect("Buddies");
+
     }
 
     public function addArray(){
