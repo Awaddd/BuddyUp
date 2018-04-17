@@ -30,7 +30,7 @@
           <div class="home__bigtext">Hi <?php echo $data['Name']; ?></div>
 
           <div class="home__links">
-            <p ><a href="" class="current">Home</a></p>
+            <p><a href="" class="current">Home</a></p>
             <p><a href="<?php echo URLROOT;?>/buddies/buddies">Buddies</a></p>
             <p><a href="<?php echo URLROOT;?>/profiles">Profile</a></p>
             <p><a href="<?php echo URLROOT;?>/events">Events</a></p>
