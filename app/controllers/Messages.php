@@ -67,12 +67,12 @@
           $convo_id = $convo->Conversation_ID;
           $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
 
-          $data = [
-
-          ];
-
-          $this->view('Messages/instantmessenger', $data);
-
+          // $data = [
+          //
+          // ];
+          //
+          // $this->view('Messages/instantmessenger', $data);
+          redirect("Messages");
 
         } else{
 
@@ -81,17 +81,18 @@
           $convo_id = $this->msgModel->getLastConvo();
           $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
 
-          $data = [
-
-          ];
-
-          $this->view('Messages/instantmessenger', $data);
+          // $data = [
+          //
+          // ];
+          //
+          // $this->view('Messages/instantmessenger', $data);
+          redirect("Messages");
 
 
         }
 
       } else {
-        redirect("home");
+        redirect("Messages");
       }
     }
 
