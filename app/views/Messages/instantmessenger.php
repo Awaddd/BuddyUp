@@ -13,7 +13,7 @@ require APPROOT . '/views/inc/header.php';
     </div>
       <div class="chat__box">
 
-
+        <span id="test"></span>
         <?php
         if ($data['msgs']) :
 
