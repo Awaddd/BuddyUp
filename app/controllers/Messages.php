@@ -46,7 +46,7 @@
         ];
         echo "LOL";
         // $this->view('messages/instantmessenger', $data);
-        $this->view('feedback/feedback', $data);
+        $this->view('Messages/instantmessenger', $data);
 
     } else {
       redirect("home");
