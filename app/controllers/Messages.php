@@ -114,10 +114,10 @@
 
             // redirect("Messages");
 
-          } else if(empty($convo)){
-
+          } else {
+            echo "Convo does not exist - creating new";
             // Conversation does not exist, create new then insert
-            echo "Convo not exist, inserting into new";
+
             // $this->msgModel->startConvo();
             // $convo_id = $this->msgModel->getLastConvo();
             // $this->msgModel->createMessage($user, $receiver, $message, $convo_id);

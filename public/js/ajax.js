@@ -65,9 +65,6 @@ $("#send-message-form").submit(function (event){
     } else {
       console.log(response);
       $("#chat-content").fadeIn().html(response);
-      $('#chat-content').animate({
-          scrollTop: $('#chat-content').get(0).scrollHeight
-      }, 1500);
     }
   });
 
