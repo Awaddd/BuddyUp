@@ -44,6 +44,7 @@
           "msgs" => $messages,
           "user" => $user
         ];
+        echo "LOL";
         $this->view('messages/instantmessenger', $data);
     } else {
       redirect("home");
