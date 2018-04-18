@@ -12,12 +12,12 @@ if($("#msgbody").length > 0){
   });
 }
 
-chat.getMessages(){
-  alert("getMessages");
+chat.getMessages = function(){
+  alert("get messages");
   $.ajax({
     url: "Messages",
-    type: "GET",
-    dataType : "json",
+    type: "post",
+    data: {method : 'fetch'}
   })
 
   .done(function(data){
