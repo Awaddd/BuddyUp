@@ -108,7 +108,7 @@ if($("#buddybody").length > 0){
         $("#spinner-text").hide();
       }
 
-      setTimeout(spinner, 300000);
+      setTimeout(spinner, 3000);
 
     });
   }
