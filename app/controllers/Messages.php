@@ -111,7 +111,7 @@
               );
             }
 
-            echo json_encode($messagesArray);
+            return json_encode($messagesArray);
             // $json = json_encode($messagesArray);
   }
 

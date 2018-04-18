@@ -84,8 +84,10 @@ $(function (){
 
   loadMessages.done(function(response){
     var msgs = $.parseJSON(response);
-
     console.log(msgs);
+    var msgs = response;
+    console.log(msgs);
+
     alert("got eeeem");
 
     console.log("msg 1: ")
