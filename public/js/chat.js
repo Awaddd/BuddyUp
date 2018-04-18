@@ -2,10 +2,12 @@ var chat = {}
 
 if($("#msgbody").length > 0){
     $(document).ready(function(){
+      
       var rec = $("#message-receiver").val();
       console.log(rec);
+
       chat.getMessages = function(){
-        alert("get messages");
+
         $.ajax({
           url: "Messages/loadMessages",
           type: "post",
