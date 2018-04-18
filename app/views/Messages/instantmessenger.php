@@ -14,10 +14,49 @@ require APPROOT . '/views/inc/header.php';
       <div class="chat__box">
 
         <span id="test"></span>
-        
-        <div id="chat-content">
+        <?php
+        if ($data['msgs']) :
 
-        </div>
+        foreach ($data['msgs'] as $msg) :
+          $user = $data['user'];
+          $date = DateTime::createFromFormat( 'Y-m-d H:i:s', $msg->MessageDate);
+          ?>
+
+          <div id="chat-content">
+            <?php if ($msg->Sender_ID == $user): ?>
+              <!--  Sender -->
+              <div class="bubble msg__sending">
+                <div class="msg__user">
+                  <?php echo $msg->Sender ?>
+                  <span class="time">
+                    <?php echo $date->format('H:i'); ?>
+                  </span>
+                </div>
+                <div class="message">
+                  <?php echo $msg->message ?>
+                </div>
+
+              </div>
+            <?php else: ?>
+              <!--  Receiver -->
+              <div class="bubble msg__receiving">
+                <div class="msg__user">
+                  <?php echo $msg->Sender ?>
+                  <span class="time">
+                    <?php echo $date->format('H:i'); ?>
+                  </span>
+                </div>
+                <div class="message">
+                  <?php echo $msg->message ?>
+                </div>
+
+
+              </div>
+            <?php endif; ?>
+
+          </div>
+        <?php endforeach;
+              endif;?>
 
 
       </div>
