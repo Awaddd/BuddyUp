@@ -14,7 +14,10 @@ require APPROOT . '/views/inc/header.php';
       <div class="chat__box">
 
         <span id="test"></span>
+        
+        <div id="chat-content">
 
+        </div>
 
 
       </div>
