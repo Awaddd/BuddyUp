@@ -30,7 +30,7 @@ if($("#msgbody").length > 0){
       }
 
       chat.interval = setInterval(chat.getMessages, 2000);
-
+      chat.getMessages();
 
   });
 }

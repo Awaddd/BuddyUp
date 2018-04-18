@@ -86,50 +86,51 @@
   }
 
     // Send Messages
-    public function sendMessage(){
-      if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // public function sendMessage(){
+    //   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    //
+    //     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    //     $receiver = trim($_POST['receiver']);
+    //     $message = trim($_POST['message']);
+    //     $user = $_SESSION['User_ID'];
+    //
+    //     $convo = $this->msgModel->getConversation($user, $receiver);
+    //     if ($convo) {
+    //
+    //       // Conversation exists, insert into previous convo
+    //       $convo_id = $convo->Conversation_ID;
+    //       $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
+    //
+    //       // $data = [
+    //       //
+    //       // ];
+    //       //
+    //       // $this->view('Messages/instantmessenger', $data);
+    //       redirect("Messages");
+    //
+    //     } else{
+    //
+    //       // Conversation does not exist, create new then insert
+    //       $this->msgModel->startConvo();
+    //       $convo_id = $this->msgModel->getLastConvo();
+    //       $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
+    //
+    //       // $data = [
+    //       //
+    //       // ];
+    //       //
+    //       // $this->view('Messages/instantmessenger', $data);
+    //       redirect("Messages");
+    //
+    //
+    //     }
+    //
+    //   } else {
+    //     redirect("Messages");
+    //   }
+    // }
 
-        $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-        $receiver = trim($_POST['receiver']);
-        $message = trim($_POST['message']);
-        $user = $_SESSION['User_ID'];
-
-        $convo = $this->msgModel->getConversation($user, $receiver);
-        if ($convo) {
-
-          // Conversation exists, insert into previous convo
-          $convo_id = $convo->Conversation_ID;
-          $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
-
-          // $data = [
-          //
-          // ];
-          //
-          // $this->view('Messages/instantmessenger', $data);
-          redirect("Messages");
-
-        } else{
-
-          // Conversation does not exist, create new then insert
-          $this->msgModel->startConvo();
-          $convo_id = $this->msgModel->getLastConvo();
-          $this->msgModel->createMessage($user, $receiver, $message, $convo_id);
-
-          // $data = [
-          //
-          // ];
-          //
-          // $this->view('Messages/instantmessenger', $data);
-          redirect("Messages");
-
-
-        }
-
-      } else {
-        redirect("Messages");
-      }
-    }
-
+    // IN USE
     public function sendMessage2(){
 
       if ($_SERVER['REQUEST_METHOD'] == 'POST') {
