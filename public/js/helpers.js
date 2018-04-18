@@ -104,5 +104,5 @@ if($("#buddybody").length > 0){
 
       setTimeout(spinner, 3000);
 
-    }
+    });
   }
