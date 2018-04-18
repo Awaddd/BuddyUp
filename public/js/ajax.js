@@ -80,8 +80,9 @@ $(function (){
 
   var messages = $('#chat-content');
 
-  var loadMessages = $.get("Messages", function(response){
+  var loadMessages = $.get("Messages");
 
+  loadMessages.done(function(response){
     var msgs = $.parseJSON(response);
 
     console.log(msgs);
@@ -92,15 +93,7 @@ $(function (){
     console.log(msgs[1].sender_id);
     console.log(msgs[1].date);
     console.log(msgs[1].sender);
-    console.log("msg 2: ")
-    console.log(msgs[2].message);
-    console.log(msgs[2].sender_id);
-    console.log(msgs[2].date);
-    console.log(msgs[2].sender);
-
-    // messages.append("msg:" + msgs[1].message);
-
-  }, "json");
+  });
 
   loadMessages.fail(function(jqXHR, status){
     alert("Request failed: " + status);
