@@ -28,9 +28,9 @@ html, body{
   background: transparent;
 
   border-left: 10px solid #6cfe9d;
-  border-right :10px solid #6cfe9d;
-  border-top: 10px solid #D2C127;;
-  border-bottom: 10px solid #D2C127;
+  border-right :10px solid #10695b;
+  border-top: 10px solid #b86e83;;
+  border-bottom: 10px solid #b86e83;
   margin: 300px auto;
   border-radius: 50%;
   animation:spinner 2s linear infinite;
