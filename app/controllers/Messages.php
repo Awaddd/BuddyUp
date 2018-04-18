@@ -46,16 +46,13 @@
       $receiver = $_POST['receiver'];
 
       $messages = $this->msgModel->loadMessages($user, $receiver);
-      foreach ($messages as $msg) {
+      foreach ($messages as $msg) :
 
          if ($msg->Sender_ID == $user): ?>
-          <!--  Sender -->
-          <div class="bubble msg__sending">
             <div class="message">
               <?php echo $msg->message ?>
             </div>
-          </div>
-      <?php
+          <?php
       endforeach;
 
     } else {
