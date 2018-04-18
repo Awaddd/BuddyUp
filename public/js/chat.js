@@ -1,6 +1,8 @@
+var chat = {}
+
 if($("#msgbody").length > 0){
     $(document).ready(function(){
-      var chat = {}
+
 
       alert("OK");
 
