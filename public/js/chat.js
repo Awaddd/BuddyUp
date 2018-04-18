@@ -16,9 +16,6 @@ if($("#msgbody").length > 0){
 
         .done(function(data){
           $("#chat-content").html(data);
-          $('#chatbox').animate({
-              scrollTop: $('#chatbox').get(0).scrollHeight
-          }, 1500);
         })
 
         .fail(function(xhr, status, errorThrown){
@@ -55,7 +52,11 @@ if($("#msgbody").length > 0){
             $("#").html("Failed to send");
           } else {
             console.log(response);
+
             chat.getMessages();
+            $('#chatbox').animate({
+                scrollTop: $('#chatbox').get(0).scrollHeight
+            }, 1500);
           }
         });
 
