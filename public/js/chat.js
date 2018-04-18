@@ -3,9 +3,6 @@ var chat = {}
 if($("#msgbody").length > 0){
     $(document).ready(function(){
 
-
-      alert("OK");
-
       chat.getMessages = function(){
         alert("get messages");
         $.ajax({
