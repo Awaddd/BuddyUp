@@ -93,6 +93,7 @@ $(document).ready(function() {
 
 if($("#buddybody").length > 0){
     $(document).ready(function(){
+      alert("we here");
 
       $("#buddybody").hide();
 
