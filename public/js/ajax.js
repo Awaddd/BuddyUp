@@ -76,27 +76,43 @@ $("#send-message-form").submit(function (event){
 //Load messages
 
 //Short hand for document ready
-$(function (){
+// $(function (){
+//
+//   var messages = $('#chat-content');
+//
+//   var loadMessages = $.get("Messages");
+//
+//   loadMessages.done(function(response){
+//     var msgs = response;
+//     console.log(msgs);
+//
+//     alert("got eeeem");
+//
+//     console.log(msgs);
+//     console.log(msgs.message);
+//     console.log(msgs[1].message);
+//     console.log(msgs[1].sender_id);
+//     console.log(msgs[1].date);
+//     console.log(msgs[1].sender);
+//   });
+//
+//   loadMessages.fail(function(jqXHR, status){
+//     alert("Request failed: " + status);
+//   });
+//
+// });
 
-  var messages = $('#chat-content');
+$.ajax({
 
-  var loadMessages = $.get("Messages");
+})
 
-  loadMessages.done(function(response){
-    var msgs = response;
-    console.log(msgs);
-
-    alert("got eeeem");
-
-    console.log("msg 1: ");
-    console.log(msgs[1].message);
-    console.log(msgs[1].sender_id);
-    console.log(msgs[1].date);
-    console.log(msgs[1].sender);
+$(function(){
+  $.ajax({
+    type: 'GET',
+    url: 'Messages',
+    success: function(response){
+      alert("got the messages")
+      console.log( response[1].message );
+    }
   });
-
-  loadMessages.fail(function(jqXHR, status){
-    alert("Request failed: " + status);
-  });
-
 });
