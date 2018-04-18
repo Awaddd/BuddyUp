@@ -47,8 +47,9 @@
 
       $messages = $this->msgModel->loadMessages($user, $receiver);
       foreach ($messages as $msg) :
+        $date = DateTime::createFromFormat( 'Y-m-d H:i:s', $msg->MessageDate);
 
-         if ($msg->Sender_ID == $user): ?>
+         if ($msg->Sender_ID === $user): ?>
          <!--  Sender -->
          <div class="bubble msg__sending">
            <div class="msg__user">
