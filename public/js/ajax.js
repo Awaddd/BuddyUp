@@ -82,9 +82,10 @@ $(function (){
 
   var loadMessages = $.get("Messages", function(response){
     console.log(response);
+    console.log(JSON.parse(response));
     alert("got eeeem");
 
-    var msgs = response;
+    var msgs = JSON.parse(response);
     console.log("msg 1: ")
     console.log(msgs[1].message);
     console.log(msgs[1].sender_id);
