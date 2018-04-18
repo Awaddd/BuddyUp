@@ -46,14 +46,14 @@
       $receiver = $_POST['receiver'];
 
       $messages = $this->msgModel->loadMessages($user, $receiver);
-      foreach ($messages as $msg) :
+      foreach ($messages as $msg) {
 
          if ($msg->Sender_ID == $user): ?>
             <div class="message">
               <?php echo $msg->message ?>
             </div>
           <?php
-      endforeach;
+      }
 
     } else {
       echo "no rec";
