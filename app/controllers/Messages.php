@@ -78,6 +78,8 @@
           // "user" => $user
         ];
         $this->view('Messages/instantmessenger', $data);
+      } else {
+        echo "LOL";
       }
 
     // } else {

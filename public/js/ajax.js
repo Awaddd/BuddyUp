@@ -100,7 +100,7 @@ $(function (){
 
     // messages.append("msg:" + msgs[1].message);
 
-  });
+  }, "json");
 
   loadMessages.fail(function(jqXHR, status){
     alert("Request failed: " + status);
