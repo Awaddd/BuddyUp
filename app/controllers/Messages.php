@@ -39,12 +39,7 @@
   }
 
   public function loadMessages(){
-    if (isset($_POST['method']) === true && empty($_POST['method']) === false)) {
-      echo "hello";
-    } else {
-      echo "nello";
-    }
-    echo "nollo";
+    echo "LOL YAA";
   }
 
     // Send Messages
