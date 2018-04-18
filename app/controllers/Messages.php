@@ -67,6 +67,7 @@
         }
 
         echo json_encode($messagesArray);
+        // $json = json_encode($messagesArray);
 
         $data = [
           "receiver" => $receiver,

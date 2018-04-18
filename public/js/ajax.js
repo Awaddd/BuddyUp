@@ -95,9 +95,7 @@ $(function (){
     console.log(msgs[2].sender_id);
     console.log(msgs[2].date);
     console.log(msgs[2].sender);
-
-
-    messages.append("msg:" msgs[1].message);
+    messages.append("msg:" + msgs[1].message);
 
   }, "json");
 
