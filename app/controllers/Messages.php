@@ -46,28 +46,31 @@
 
         $receiver = trim($_POST['receiver']);
         $user = $_SESSION['User_ID'];
-        $messages = $this->msgModel->loadMessages($user, $receiver);
-        $receiverName = $this->userModel->displayName($receiver);
 
-        // declare php array
-        $messagesArray = array();
-        foreach ($messages as $msg) {
-          // push each row into array
-          $date = DateTime::createFromFormat( 'Y-m-d H:i:s', $msg->MessageDate);
+        // $messages = $this->msgModel->loadMessages($user, $receiver);
+        // $receiverName = $this->userModel->displayName($receiver);
+        //
+        // // declare php array
+        // $messagesArray = array();
+        // foreach ($messages as $msg) {
+        //   // push each row into array
+        //   $date = DateTime::createFromFormat( 'Y-m-d H:i:s', $msg->MessageDate);
+        //
+        //   // $msgList = array($msg->Sender_ID, $msg->message, $date->format('H:i'), $msg->Sender);
+        //
+        //     // array($user, $msg->Sender_ID, $msg->message, $date->format('H:i'), $msg->Sender);
+        //   $messagesArray[] = array(
+        //     "sender_id" => $msg->Sender_ID,
+        //     "message" => $msg->message,
+        //     "date" => $date->format('H:i'),
+        //     "sender" => $msg->Sender
+        //   );
+        // }
+        //
+        // echo json_encode($messagesArray);
+        // // $json = json_encode($messagesArray);
 
-          // $msgList = array($msg->Sender_ID, $msg->message, $date->format('H:i'), $msg->Sender);
-
-            // array($user, $msg->Sender_ID, $msg->message, $date->format('H:i'), $msg->Sender);
-          $messagesArray[] = array(
-            "sender_id" => $msg->Sender_ID,
-            "message" => $msg->message,
-            "date" => $date->format('H:i'),
-            "sender" => $msg->Sender
-          );
-        }
-
-        echo json_encode($messagesArray);
-        // $json = json_encode($messagesArray);
+        $this->displayMessages($user, $receiver);
 
         $data = [
           "receiver" => $receiver,
@@ -76,13 +79,40 @@
           // "user" => $user
         ];
         $this->view('Messages/instantmessenger', $data);
+      }
 
-    } else {
-      $data =[];
-      $this->view('Messages/instantmessenger', $data);
-      echo "oops";
-      // redirect("Buddies");
-    }
+    // } else {
+    //   $data =[];
+    //   $this->view('Messages/instantmessenger', $data);
+    //   echo "oops";
+    //   // redirect("Buddies");
+    // }
+  }
+
+  public function displayMessages($user, $receiver){
+
+            $messages = $this->msgModel->loadMessages($user, $receiver);
+            $receiverName = $this->userModel->displayName($receiver);
+
+            // declare php array
+            $messagesArray = array();
+            foreach ($messages as $msg) {
+              // push each row into array
+              $date = DateTime::createFromFormat( 'Y-m-d H:i:s', $msg->MessageDate);
+
+              // $msgList = array($msg->Sender_ID, $msg->message, $date->format('H:i'), $msg->Sender);
+
+                // array($user, $msg->Sender_ID, $msg->message, $date->format('H:i'), $msg->Sender);
+              $messagesArray[] = array(
+                "sender_id" => $msg->Sender_ID,
+                "message" => $msg->message,
+                "date" => $date->format('H:i'),
+                "sender" => $msg->Sender
+              );
+            }
+
+            echo json_encode($messagesArray);
+            // $json = json_encode($messagesArray);
   }
 
     // Send Messages
