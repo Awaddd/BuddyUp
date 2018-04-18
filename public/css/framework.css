@@ -27,10 +27,10 @@ html, body{
   height: 150px;
   background: transparent;
 
-  border-left: 10px solid #b8aeeb;
-  border-right :10px solid #b0e3d5;
-  border-top: 10px solid #bcb0e3;;
-  border-bottom: 10px solid #b0e3d5;
+  border-left: 10px solid #6cfe9d;
+  border-right :10px solid #ee2d66;
+  border-top: 10px solid #6cfe9d;;
+  border-bottom: 10px solid #3eb666;
   margin: 300px auto;
   border-radius: 50%;
   animation:spinner 2s linear infinite;
@@ -43,7 +43,8 @@ html, body{
   left: 45%;
   font-size: 1.5rem;
   font-weight: 600;
-  animation: fadein 3s ;
+  animation: fadein 3s;
+  color: #fff;
 }
 @keyframes fadein {
   from{opacity: 0;}
