@@ -72,3 +72,27 @@ $("#send-message-form").submit(function (event){
   });
 
 });
+
+//Load messages
+
+//Short hand for document ready
+$(function (){
+
+  var messages = $('#chat-content');
+
+  var loadMessages = $.get("Messages", function(response){
+    console.log(response);
+    alert("got eeeem");
+
+    var msgs = response;
+    console.log(msgs[1].message);
+
+    messages.append("msg:" msgs[1].message);
+
+  }, "json");
+
+  loadMessages.fail(function(jqXHR, status){
+    alert("Request failed: " + status);
+  });
+
+});
