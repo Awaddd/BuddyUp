@@ -88,7 +88,7 @@ $(function (){
 
     alert("got eeeem");
 
-    console.log("msg 1: ")
+    console.log("msg 1: ");
     console.log(msgs[1].message);
     console.log(msgs[1].sender_id);
     console.log(msgs[1].date);
