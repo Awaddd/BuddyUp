@@ -9,7 +9,7 @@ if($("#msgbody").length > 0){
         $.ajax({
           url: "Messages/loadMessages",
           type: "post",
-          data: {receiver : 'rec'}
+          data: {receiver : rec}
         })
 
         .done(function(data){
