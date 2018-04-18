@@ -104,8 +104,6 @@ if($("#buddybody").length > 0){
         $("#buddytitle").show();
         $("#buddycontent").show();
         $(".nav").show();
-        $("#buddy-card").hide();
-        $("#buddy-card").fadeIn();
         $("#spinner").hide();
         $("#spinner-text").hide();
       }
