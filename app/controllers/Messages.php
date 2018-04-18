@@ -144,13 +144,9 @@
           $message = trim($_POST['newMessage']);
           $user = $_SESSION['User_ID'];
 
-          echo "Receiver:" . $receiver . " msg: ";
-          echo $message . "<br>";
-
           $convo = $this->msgModel->getConversation($user, $receiver);
 
           if ($convo) {
-            echo "convo exists - inserting into previous convo";
             // Conversation exists, insert into previous convo
 
             $convo_id = $convo->Conversation_ID;
@@ -159,7 +155,6 @@
             // redirect("Messages");
 
           } else {
-            echo "Convo does not exist - creating new";
             // Conversation does not exist, create new then insert
 
             $this->msgModel->startConvo();

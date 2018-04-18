@@ -29,7 +29,7 @@ if($("#msgbody").length > 0){
         });
       }
 
-      chat.interval = setInterval(chat.getMessages, 5000);
+      chat.interval = setInterval(chat.getMessages, 2000);
 
 
   });
