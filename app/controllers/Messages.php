@@ -48,8 +48,9 @@
       $messages = $this->msgModel->loadMessages($user, $receiver);
 
       foreach ($messages as $msg) {
-        echo $msg->receiver;
-        echo "msg";
+        echo $msg->message;
+        echo $msg->Receiver;
+        echo $msg->Seceiver;
       }
     } else {
       echo "no rec";
