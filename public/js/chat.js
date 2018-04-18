@@ -16,8 +16,8 @@ if($("#msgbody").length > 0){
 
         .done(function(data){
           $("#chat-content").html(data);
-          $('.chat__box').animate({
-              scrollTop: $('#chat__box').get(0).scrollHeight
+          $('#chatbox').animate({
+              scrollTop: $('#chatbox').get(0).scrollHeight
           }, 1500);
         })
 

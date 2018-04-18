@@ -11,10 +11,9 @@ require APPROOT . '/views/inc/header.php';
         <?php echo $data['receiverName']; ?>
       </div>
     </div>
-    
-      <div class="chat__box">
 
-        <span id="test"></span>
+      <div class="chat__box" id="chatbox">
+
         <div id="chat-content"></div>
 
       </div>
