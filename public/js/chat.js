@@ -70,6 +70,12 @@ if($("#msgbody").length > 0){
 
       });
 
+      $("#msgbody").hide();
+      function spinner(){
+        $("#spinner").hide();
+        $("#msgbody").show();
+      }
+      setTimeout(spinner, 3000);
       chat.interval = setInterval(chat.getMessages, 5000);
       chat.getMessages();
   });

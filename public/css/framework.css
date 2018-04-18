@@ -22,6 +22,26 @@ html, body{
     background: #5683FF;
   }
 
+  #spinner{
+  width: 150px;
+  height: 150px;
+  background: transparent;
+
+  border-left: 10px solid #b8aeeb;
+  border-right :10px solid #b0e3d5;
+  border-top: 10px solid #bcb0e3;;
+  border-bottom: 10px solid #b0e3d5;
+  margin: 300px auto;
+  border-radius: 50%;
+  animation:spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
   /*container stuff*/
   .container {
     box-sizing: border-box;

@@ -5,6 +5,9 @@ require APPROOT . '/views/inc/header.php';
 
 <div class="chat__body background-purple-gradient" id="msgbody">
   <?php require APPROOT . '/views/inc/nav.php'; ?>
+
+  <div id="spinner"></div>
+
   <div class="chat__window">
     <div class="chat__head">
       <div class="chat__user">
