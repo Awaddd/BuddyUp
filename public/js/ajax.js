@@ -81,10 +81,12 @@ $(function (){
   var messages = $('#chat-content');
 
   var loadMessages = $.get("Messages", function(response){
-    console.log(JSON.parse(response));
+
+    var msgs = $.parseJSON(response);
+
+    console.log(msgs);
     alert("got eeeem");
 
-    var msgs = JSON.parse(response);
     console.log("msg 1: ")
     console.log(msgs[1].message);
     console.log(msgs[1].sender_id);
@@ -95,6 +97,7 @@ $(function (){
     console.log(msgs[2].sender_id);
     console.log(msgs[2].date);
     console.log(msgs[2].sender);
+
     // messages.append("msg:" + msgs[1].message);
 
   });
