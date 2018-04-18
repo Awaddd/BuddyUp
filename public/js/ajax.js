@@ -80,7 +80,7 @@ $(function (){
 
   var messages = $('#chat-content');
 
-  var loadMessages = $.get("Messages/DisplayMessages", function(response){
+  var loadMessages = $.get("Messages", function(response){
 
     var msgs = $.parseJSON(response);
 

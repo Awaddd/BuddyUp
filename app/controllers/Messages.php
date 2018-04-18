@@ -70,6 +70,7 @@
         // echo json_encode($messagesArray);
         // // $json = json_encode($messagesArray);
 
+        $this->displayMessages($user, $receiver);
 
         $data = [
           "receiver" => $receiver,
@@ -78,8 +79,6 @@
           // "user" => $user
         ];
         $this->view('Messages/instantmessenger', $data);
-      } else {
-        echo "LOL";
       }
 
     // } else {
