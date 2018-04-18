@@ -39,7 +39,12 @@
   }
 
   public function loadMessages(){
-    echo "hello";
+    if (isset($_POST['method'] === true && empty($_POST['method']) === false)) {
+      $method = trim($_POST['method']);
+      if ($method === 'fetch') {
+        echo "fetchin";
+      }
+    }
   }
 
     // Send Messages
