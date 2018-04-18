@@ -16,8 +16,8 @@ if($("#msgbody").length > 0){
 
         .done(function(data){
           $("#chat-content").html(data);
-          $("#chat-content").animate({
-            scrollTop: $('#chat-content').get(0).scrollHeight
+          $('#chat-content').animate({
+              scrollTop: $('#chat-content').get(0).scrollHeight
           }, 1500);
         })
 
@@ -56,6 +56,9 @@ if($("#msgbody").length > 0){
           } else {
             console.log(response);
             chat.getMessages();
+            $('#chat-content').animate({
+                scrollTop: $('#chat-content').get(0).scrollHeight
+            }, 1500);
           }
         });
 
@@ -67,6 +70,8 @@ if($("#msgbody").length > 0){
 
       chat.interval = setInterval(chat.getMessages, 5000);
       chat.getMessages();
-
+      $('#chat-content').animate({
+          scrollTop: $('#chat-content').get(0).scrollHeight
+      }, 1500);
   });
 }
