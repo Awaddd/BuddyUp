@@ -81,7 +81,6 @@ $(function (){
   var messages = $('#chat-content');
 
   var loadMessages = $.get("Messages", function(response){
-    console.log(response);
     console.log(JSON.parse(response));
     alert("got eeeem");
 
