@@ -104,7 +104,7 @@ if($("#buddybody").length > 0){
         $("#buddytitle").show();
         $("#buddycontent").show();
         $(".nav").show();
-        $("#buddy-card").fadein();
+        $("#buddy-card").fadeIn();
         $("#spinner").hide();
         $("#spinner-text").hide();
       }
