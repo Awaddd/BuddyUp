@@ -44,9 +44,12 @@
 
       $user = $_SESSION['User_ID'];
       $receiver = $_POST['receiver'];
+
       $messages = $this->msgModel->loadMessages($user, $receiver);
+
       foreach ($messages as $msg) {
         echo $msg->receiver;
+        echo "msg";
       }
     } else {
       echo "no rec";
