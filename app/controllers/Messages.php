@@ -40,7 +40,11 @@
 
   public function loadMessages(){
     echo "load msg";
-    
+    if (isset($_POST['receiver'])) {
+      echo $_POST['receiver'];
+    } else {
+      echo "no rec";
+    }
 
   }
 
