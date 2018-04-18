@@ -27,10 +27,10 @@ html, body{
   height: 150px;
   background: transparent;
 
-  border-left: 10px solid #0fb784;
-  border-right :10px solid #4fffb2;
-  border-top: 10px solid #9bffa4;
-  border-bottom: 10px solid #cbffcd;
+  border-left: 10px solid #009c6c;
+  border-right :10px solid #47ffaf;
+  border-top: 10px solid #88ff93;
+  border-bottom: 10px solid #00a206;
   margin: 300px auto;
   border-radius: 50%;
   animation:spinner 2s linear infinite;
