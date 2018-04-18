@@ -112,6 +112,8 @@
             }
 
             return json_encode($messagesArray);
+            $this->view('Messages/instantmessenger', $data = []);
+
             // $json = json_encode($messagesArray);
   }
 

@@ -83,8 +83,6 @@ $(function (){
   var loadMessages = $.get("Messages");
 
   loadMessages.done(function(response){
-    var msgs = $.parseJSON(response);
-    console.log(msgs);
     var msgs = response;
     console.log(msgs);
 
