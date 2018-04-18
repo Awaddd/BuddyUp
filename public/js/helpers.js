@@ -104,11 +104,13 @@ if($("#buddybody").length > 0){
         $("#buddytitle").show();
         $("#buddycontent").show();
         $(".nav").show();
+        $("#buddy-card").fadein();
         $("#spinner").hide();
         $("#spinner-text").hide();
       }
 
       setTimeout(spinner, 3000);
+
 
     });
   }

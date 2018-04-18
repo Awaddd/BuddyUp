@@ -25,7 +25,7 @@ require APPROOT . '/views/inc/header.php';
 
       $age = date_diff(date_create($dob), date_create('now'))->y;
       ?>
-      <div class="buddy__card">
+      <div class="buddy__card" id="buddy-card">
 
 
         <div class="buddy__card__title"><?php echo $match->FirstName ." ".$match->LastName?></div>
