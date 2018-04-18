@@ -102,17 +102,17 @@ $("#send-message-form").submit(function (event){
 //
 // });
 
-$.ajax({
-
-})
-
-$(function(){
-  $.ajax({
-    type: 'GET',
-    url: 'Messages',
-    success: function(response){
-      alert("got the messages")
-      console.log( response[1].message );
-    }
-  });
-});
+// $.ajax({
+//
+// })
+//
+// $(function(){
+//   $.ajax({
+//     type: 'GET',
+//     url: 'Messages',
+//     success: function(msg){
+//       alert("got the messages")
+//       console.log( msg[0].message );
+//     }
+//   });
+// });
