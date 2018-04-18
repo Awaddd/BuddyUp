@@ -39,7 +39,9 @@
   }
 
   public function loadMessages(){
-    echo "LOL YAA";
+    echo "load msg";
+    
+
   }
 
     // Send Messages
