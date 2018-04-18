@@ -39,9 +39,15 @@
   }
 
   public function loadMessages(){
-    echo "load msg";
+
     if (isset($_POST['receiver'])) {
-      echo $_POST['receiver'];
+
+      $user = $_SESSION['User_ID'];
+      $receiver = $_POST['receiver'];
+      $messages = $this->msgModel->loadMessages($user, $receiver);
+      foreach ($messages as $msg) {
+        echo $msg->receiver;
+      }
     } else {
       echo "no rec";
     }
