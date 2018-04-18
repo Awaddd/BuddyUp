@@ -4,7 +4,9 @@ require APPROOT . '/views/inc/header.php';
 
 <div class="buddy__body" id="buddybody">
   <?php require APPROOT . '/views/inc/nav.php'; ?>
+
   <div id="spinner"></div>
+  <div id="spinner-text">Loading Matches</div>
 
   <div id="buddytitle" class="title">Your matches</div>
   <div id="buddycontent" class="buddy__content">

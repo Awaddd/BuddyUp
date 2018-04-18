@@ -95,6 +95,7 @@ if($("#buddybody").length > 0){
     $(document).ready(function(){
 
       $("#spinner").show();
+      $("#spinner-text").show();
       $("#buddytitle").hide();
       $(".nav").hide();
       $("#buddycontent").hide();
@@ -104,6 +105,7 @@ if($("#buddybody").length > 0){
         $("#buddycontent").show();
         $(".nav").show();
         $("#spinner").hide();
+        $("#spinner-text").hide();
       }
 
       setTimeout(spinner, 3000);
