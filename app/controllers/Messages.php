@@ -38,6 +38,10 @@
     }
   }
 
+  public function loadMessages(){
+    echo "hello";
+  }
+
     // Send Messages
     public function sendMessage(){
       if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -125,7 +129,7 @@
         }
       }
     }
-    
+
 
 }
 ?>

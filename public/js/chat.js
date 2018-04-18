@@ -6,7 +6,7 @@ if($("#msgbody").length > 0){
       chat.getMessages = function(){
         alert("get messages");
         $.ajax({
-          url: "Messages",
+          url: "Messages/loadMessages",
           type: "post",
           data: {method : 'fetch'}
         })
