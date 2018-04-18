@@ -2,8 +2,10 @@
 require APPROOT . '/views/inc/header.php';
 ?>
 
-<div class="buddy__body">
+<div class="buddy__body" id="buddybody">
+  <div id="spinner"></div>
   <?php require APPROOT . '/views/inc/nav.php'; ?>
+
   <div class="title">Your matches</div>
   <div class="buddy__content">
 

@@ -90,3 +90,18 @@ $(document).ready(function() {
         }
     });
 });
+
+if($("#buddybody").length > 0){
+    $(document).ready(function(){
+
+      $("#buddybody").hide();
+
+      function spinner(){
+        $("#buddybody").show();
+        $("#spinner").hide();
+      }
+
+      setTimeout(spinner, 3000);
+
+    }
+  }
