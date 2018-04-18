@@ -3,7 +3,7 @@
 require APPROOT . '/views/inc/header.php';
 ?>
 
-<div class="chat__body background-purple-gradient">
+<div class="chat__body background-purple-gradient" id="msgbody">
   <?php require APPROOT . '/views/inc/nav.php'; ?>
   <div class="chat__window">
     <div class="chat__head">

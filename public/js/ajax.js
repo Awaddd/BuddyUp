@@ -36,7 +36,6 @@ $("#add-interest-form").submit(function (event){
 });
 
 
-
 $("#send-message-form").submit(function (event){
   event.preventDefault();
 
