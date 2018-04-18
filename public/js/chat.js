@@ -2,7 +2,7 @@ var chat = {}
 
 if($("#msgbody").length > 0){
     $(document).ready(function(){
-      
+
       var rec = $("#message-receiver").val();
       console.log(rec);
 
@@ -16,6 +16,9 @@ if($("#msgbody").length > 0){
 
         .done(function(data){
           $("#chat-content").html(data);
+          $("#chat-content").animate({
+            scrollTop: $('#chat-content').get(0).scrollHeight
+          }, 1500);
         })
 
         .fail(function(xhr, status, errorThrown){
