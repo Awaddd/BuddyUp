@@ -20,5 +20,5 @@ if($("#msgbody").length > 0){
       //   console.log("Status: " + status);
       //   console.dir(xhr);
       // });
-  }
+  });
 }
