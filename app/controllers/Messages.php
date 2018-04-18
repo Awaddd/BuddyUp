@@ -43,6 +43,8 @@
       $method = trim($_POST['method']);
       if ($method === 'fetch') {
         echo "fetchin";
+      } else {
+        echo "lol";
       }
     }
   }
