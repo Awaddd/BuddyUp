@@ -85,7 +85,17 @@ $(function (){
     alert("got eeeem");
 
     var msgs = response;
+    console.log("msg 1: ")
     console.log(msgs[1].message);
+    console.log(msgs[1].sender_id);
+    console.log(msgs[1].date);
+    console.log(msgs[1].sender);
+    console.log("msg 2: ")
+    console.log(msgs[2].message);
+    console.log(msgs[2].sender_id);
+    console.log(msgs[2].date);
+    console.log(msgs[2].sender);
+
 
     messages.append("msg:" msgs[1].message);
 

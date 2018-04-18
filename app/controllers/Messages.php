@@ -52,12 +52,10 @@
         // declare php array
         $messagesArray = array();
         foreach ($messages as $msg) {
-          $msgList = array();
           // push each row into array
-          $user = $data['user'];
           $date = DateTime::createFromFormat( 'Y-m-d H:i:s', $msg->MessageDate);
 
-          $msgList = array($msg->Sender_ID, $msg->message, $date->format('H:i'), $msg->Sender);
+          // $msgList = array($msg->Sender_ID, $msg->message, $date->format('H:i'), $msg->Sender);
 
             // array($user, $msg->Sender_ID, $msg->message, $date->format('H:i'), $msg->Sender);
           $messagesArray[] = array(
@@ -79,6 +77,9 @@
         $this->view('Messages/instantmessenger', $data);
 
     } else {
+      $data =[];
+      $this->view('Messages/instantmessenger', $data);
+      echo "oops";
       // redirect("Buddies");
     }
   }
