@@ -14,7 +14,6 @@ require APPROOT . '/views/inc/header.php';
       <div class="chat__box">
 
         <span id="test"></span>
-
         <?php
         if ($data['msgs']) :
 
@@ -24,26 +23,40 @@ require APPROOT . '/views/inc/header.php';
           ?>
 
           <div id="chat-content">
-
+            <?php if ($msg->Sender_ID == $user): ?>
               <!--  Sender -->
               <div class="bubble msg__sending">
                 <div class="msg__user">
-                  <span class="time"></span>
+                  <?php echo $msg->Sender ?>
+                  <span class="time">
+                    <?php echo $date->format('H:i'); ?>
+                  </span>
                 </div>
-                <div class="message"></div>
-              </div>
+                <div class="message">
+                  <?php echo $msg->message ?>
+                </div>
 
+              </div>
+            <?php else: ?>
               <!--  Receiver -->
               <div class="bubble msg__receiving">
                 <div class="msg__user">
-                  <span class="time"></span>
+                  <?php echo $msg->Sender ?>
+                  <span class="time">
+                    <?php echo $date->format('H:i'); ?>
+                  </span>
                 </div>
-                <div class="message"></div>
+                <div class="message">
+                  <?php echo $msg->message ?>
+                </div>
 
 
               </div>
+            <?php endif; ?>
 
           </div>
+        <?php endforeach;
+              endif;?>
 
 
       </div>
