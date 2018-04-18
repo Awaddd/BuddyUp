@@ -96,11 +96,13 @@ if($("#buddybody").length > 0){
 
       $("#spinner").show();
       $("#buddytitle").hide();
+      $(".nav").hide();
       $("#buddycontent").hide();
 
       function spinner(){
         $("#buddytitle").show();
         $("#buddycontent").show();
+        $(".nav").show();
         $("#spinner").hide();
       }
 

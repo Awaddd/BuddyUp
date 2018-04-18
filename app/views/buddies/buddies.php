@@ -3,8 +3,8 @@ require APPROOT . '/views/inc/header.php';
 ?>
 
 <div class="buddy__body" id="buddybody">
-  <div id="spinner"></div>
   <?php require APPROOT . '/views/inc/nav.php'; ?>
+  <div id="spinner"></div>
 
   <div id="buddytitle" class="title">Your matches</div>
   <div id="buddycontent" class="buddy__content">
