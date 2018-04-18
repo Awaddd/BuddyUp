@@ -70,7 +70,6 @@
         // echo json_encode($messagesArray);
         // // $json = json_encode($messagesArray);
 
-        $this->displayMessages($user, $receiver);
 
         $data = [
           "receiver" => $receiver,
