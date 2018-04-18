@@ -6,8 +6,8 @@ require APPROOT . '/views/inc/header.php';
   <div id="spinner"></div>
   <?php require APPROOT . '/views/inc/nav.php'; ?>
 
-  <div class="title">Your matches</div>
-  <div class="buddy__content">
+  <div id="buddytitle" class="title">Your matches</div>
+  <div id="buddycontent" class="buddy__content">
 
 
   <?php

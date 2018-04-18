@@ -95,10 +95,12 @@ if($("#buddybody").length > 0){
     $(document).ready(function(){
 
       $("#spinner").show();
-      $("#buddybody").hide();
+      $("#buddytitle").hide();
+      $("#buddycontent").hide();
 
       function spinner(){
-        $("#buddybody").show();
+        $("#buddytitle").show();
+        $("#buddycontent").show();
         $("#spinner").hide();
       }
 
