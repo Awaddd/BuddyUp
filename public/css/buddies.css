@@ -100,6 +100,10 @@
     grid-gap: 60px;
     margin-top: 10px;
   }
+
+  #spinner-text{
+    left: 40%;
+  }
 }
 
 /* Desktop queries below */
@@ -112,7 +116,6 @@
     min-height: 100%;
     display: grid;
     grid-template-rows: max-content max-content 1fr;
-    grid-gap: 0;
   }
 
   .buddy__title{
