@@ -75,9 +75,6 @@ html, body{
       max-width: 1000px;
       /*height: auto;*/
     }
-    #spinner-text{
-      left: 40%;
-    }
   }
 
   @media only screen and (min-width: 850px) {
