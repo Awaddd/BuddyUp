@@ -225,40 +225,21 @@ require APPROOT . '/views/inc/header.php';
         <form class="manage-interests-content" id="add-interest-form" action="Profiles" method="POST">
           <div class="manage-interests-all">
 
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">Basketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">casketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">KHsketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">BaJGetball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">FGDGSSD</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">Basketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">Basketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">Basketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">casketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">KHsketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">BaJGetball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">FGDGSSD</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">Basketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">Basketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">Basketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">Basketball</label>
-              <label for="chk">
-              <input id="chk" type="checkbox" name="" value="Basketball">Basketball</label>
+            <span>Basketball</span>
+            <span>Nature</span>
+            <span>Environment</span>
+            <span>Volcanoes</span>
+            <span>Conspiracy Theories</span>
+            <span>Economics</span>
+            <span>Skiing</span>
+            <span>Reading</span>
+            <span>Waving</span>
+            <span>Games</span>
+            <span>Sports</span>
+            <span>Ajax</span>
+            <span>Tennis</span>
+            <span>Chocolate</span>
+            <span>Water</span>
 
           </div>
           <div class="manage-interests-myinterests">
