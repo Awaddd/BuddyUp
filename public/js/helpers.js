@@ -9,6 +9,14 @@ var profileTab3 = $("#profile-tab-3");
 // CHANGE TITLE!!!
 var profileTabTitle = $("#profile__window__title");
 
+// SIGN UP BUTTONS
+var nextBtn = $("#nextBtn");
+var backBtn = $("#backBtn");
+var submitBtn = $("#submitBtn");
+// Sign up tabs
+var loginDetails = $("#loginDetails");
+var personalDetails = $("#personalDetails");
+
 $( document ).ready(function() {
     //Manually set display: none on top of profile css
     profileTab1.on("click", function(){
@@ -36,6 +44,33 @@ $( document ).ready(function() {
       profile2.hide("medium");
       profile3.show("medium");
     });
+
+    nextBtn.on("click", function(){
+      nextBtn.hide();
+      loginDetails.hide();
+
+      backBtn.show();
+      submitBtn.show();
+      personalDetails.show();
+    });
+
+    backBtn.on("click", function(){
+      nextBtn.show();
+      loginDetails.show();
+
+      backBtn.hide();
+      submitBtn.hide();
+      personalDetails.hide();
+    })
+
+
+    hideThis('loginDetails');
+    hideThis('nextBtn');
+
+    showThis('personalDetails');
+    showThis('backBtn');
+    showThis('submitBtn');
+
 });
 
 
