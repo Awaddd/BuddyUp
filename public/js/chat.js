@@ -70,8 +70,8 @@ if($("#msgbody").length > 0){
 
       });
 
-      
-      chat.interval = setInterval(chat.getMessages, 5000);
+
+      chat.interval = setInterval(chat.getMessages, 3000);
       chat.getMessages();
   });
 }
