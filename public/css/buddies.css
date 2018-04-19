@@ -3,6 +3,9 @@
   justify-self: center;
   align-self: center;
   font-size: 2rem;
+  position: absolute;
+  top: 35%;
+  text-align: center;
 }
 
 .buddy__body{
@@ -31,9 +34,6 @@
   grid-gap: 30px;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 35%;
-  text-align: center;
 }
 
 .buddy__card{
