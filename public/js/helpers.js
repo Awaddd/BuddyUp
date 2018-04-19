@@ -16,6 +16,7 @@ var submitBtn = $("#submitBtn");
 // Sign up tabs
 var loginDetails = $("#loginDetails");
 var personalDetails = $("#personalDetails");
+var registerContent = $("#reg-content");
 
 $( document ).ready(function() {
     //Manually set display: none on top of profile css
@@ -52,6 +53,8 @@ $( document ).ready(function() {
       backBtn.show();
       submitBtn.show();
       personalDetails.show();
+
+      registerContent.css({"height" : "480px"});
     });
 
     backBtn.on("click", function(){
@@ -61,16 +64,10 @@ $( document ).ready(function() {
       backBtn.hide();
       submitBtn.hide();
       personalDetails.hide();
-    })
 
+      registerContent.css({"height" : "420px"});
 
-    hideThis('loginDetails');
-    hideThis('nextBtn');
-
-    showThis('personalDetails');
-    showThis('backBtn');
-    showThis('submitBtn');
-
+    });
 });
 
 

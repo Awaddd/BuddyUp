@@ -12,7 +12,7 @@
       <div class="home__logout">
       </div>
     </div>
-    <div class="register__content" id="content">
+    <div class="register__content" id="reg-content">
 
       <p class="content__title">Sign up</p>
 

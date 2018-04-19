@@ -86,8 +86,8 @@ a{
   /*Style the content*/
   background-color: #ffffff;
   width: 320px;
-  height: 320px;
-  padding: 7% 2%;
+  height: 420px;
+  padding: 20px 40px 10px 40px;
   border-radius: 3px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
