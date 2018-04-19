@@ -184,7 +184,7 @@
   grid-gap: 5px;
   max-height: 180px;
   overflow-y: auto;
-
+  align-self: center;
 }
 
 .manage-interests-myinterests-inputs{

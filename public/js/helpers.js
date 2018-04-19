@@ -141,7 +141,7 @@ if($("#buddybody").length > 0){
         $("#spinner-text").hide();
       }
 
-      setTimeout(spinner, 3000);
+      setTimeout(spinner, 30030);
 
 
     });
