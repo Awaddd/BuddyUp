@@ -31,6 +31,9 @@
   grid-gap: 30px;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 35%;
+  text-align: center;
 }
 
 .buddy__card{
@@ -70,6 +73,7 @@
   text-align: center;
   font-size: 1rem;
   /* display: grid; */
+  padding: 0 5px;
 }
 
 .buddy__card__btn{
@@ -80,21 +84,6 @@
   grid-gap: 15px;
 }
 
-
-
-@media only screen and (min-width: 800px) {
-  .buddy__card{
-
-  }
-
-  .buddy__body{
-
-  }
-
-  .buddy__content{
-
-  }
-}
 
 /* Laptop queries below */
 @media only screen  and (min-width: 800px) {
@@ -108,6 +97,8 @@
 
   .buddy__content{
     grid-template-columns: repeat(2, max-content);
+    grid-gap: 60px;
+    margin-top: 10px;
   }
 }
 
