@@ -49,8 +49,8 @@ require APPROOT . '/views/inc/header.php';
       </div>
 
   <?php endforeach;
-  else: echo "No matches to display, go pick some popular interests and try again!";
-  endif;?>
+  else: ?><div class="nomatches">No matches to display, go pick some popular interests and try again.</div> 
+  <?php endif;?>
   </div>
 </div>
 

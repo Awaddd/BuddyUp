@@ -1,3 +1,10 @@
+.nomatches{
+  color: #fff;
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+}
+
 .buddy__body{
   background: #0f0c29;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom right, #35087A, #1B043D);  /* Chrome 10-25, Safari 5.1-6 */
@@ -90,13 +97,17 @@
 }
 
 /* Laptop queries below */
-@media only screen  and (min-width: 1200px) {
+@media only screen  and (min-width: 800px) {
   .buddy__card{
 
   }
 
   .buddy__body{
 
+  }
+
+  .buddy__content{
+    grid-template-columns: repeat(2, max-content);
   }
 }
 

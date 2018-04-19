@@ -46,6 +46,7 @@ $( document ).ready(function() {
       profile3.show("medium");
     });
 
+    //Sign up buttons
     nextBtn.on("click", function(){
       nextBtn.hide();
       loginDetails.hide();
