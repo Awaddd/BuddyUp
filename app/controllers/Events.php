@@ -22,7 +22,7 @@
       $matches = $this->matchModel->getMatches($user, $role);
 
       $data = [
-        "match" => $matches
+        "matches" => $matches
       ];
       $this->view('events/events', $data);
     }
