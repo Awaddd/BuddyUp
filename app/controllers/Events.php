@@ -58,9 +58,10 @@
         // }
 
         print_r($data);
+      }
         // $this->eventModel->createEvent($user, $data);
 
-        redirect("events");
+        // redirect("events");
 
       } else {
         redirect("events");
