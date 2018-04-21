@@ -111,7 +111,7 @@
             <span class="">Who</span>
             <select class="event__buddy" name="match">
               <?php foreach ($data['matches'] as $match): ?>
-                <option value="<?php echo $match->User_ID ?>"><?php echo $match->User_ID ?></option>
+                <option value="<?php echo $match->User_ID ?>"><?php echo $match->FirstName ?></option>
               <?php endforeach; ?>
             </select>
           </div>

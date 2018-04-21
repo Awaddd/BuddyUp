@@ -10,7 +10,7 @@
 
     public function createEvent($user, $data){
       $this->db->query("INSERT INTO event (Name, Description, ReminderTime, Tourist_ID, Buddy_ID)
-                        VALUES (:eventName, :description, :eventTime, :tourist, :buddy);");
+                        VALUES (:eventName, :description, :eventTime, :tourist, :buddy)");
 
         $this->db->bind(":eventName", $data['eventName']);
         $this->db->bind(":description", $data['description']);
