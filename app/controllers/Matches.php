@@ -122,21 +122,5 @@
 
     }
 
-    public function addArray(){
-      $user = $_SESSION['User_ID'];
-      $match = 5;
-      $role = $this->userModel->getUserRole($user);
-      $checkMatch = $this->matchModel->checkMatch($match, $user, $role->Role_ID);
-      if (empty($checkMatch)) {
-        echo "LOLs";
-      } else if (!empty($checkMatch)){
-        echo ":(";
-      }
-
-
-
-    }
-
-
   }
 ?>

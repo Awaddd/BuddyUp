@@ -99,37 +99,40 @@
       <div class="event__side__title">
         Create Event
       </div>
+      <form class="" action="events/createEvent" method="post">
 
-      <div class="event__side__content">
-        <label>Give the event a title</label>
-        <div class="input-group">
-          <span class="">Event</span>
-          <input class="" type="text" name="" value="">
+        <div class="event__side__content">
+          <label>Give the event a title</label>
+          <div class="input-group">
+            <span class="">Event</span>
+            <input class="" type="text" name="name" value="">
+          </div>
+          <label>Who with?</label>
+          <div class="input-group">
+            <span class="">Who</span>
+            <select class="event__buddy" name="match">
+              <?php foreach ($data['match'] as $match => $value): ?>
+                <option value="<?= $match->User_ID ?>"><?= $match->FirstName ?></option>
+              <?php endforeach; ?>
+            </select>
+          </div>
+          <label>What do you plan to do?</label>
+          <div class="input-group">
+            <span class="">Description</span>
+            <textarea name="description" rows="1"></textarea>
+          </div>
+          <label>When?</label>
+          <div class="input-group">
+            <span class="">Time</span>
+            <input class="" type="time" name="time" value="">
+          </div>
         </div>
-        <label>Who with?</label>
-        <div class="input-group">
-          <span class="">Who</span>
-          <select class="event__buddy" name="">
-            <option value="">James</option>
-            <option value="">Jack</option>
-            <option value="">Jill</option>
-          </select>
-        </div>
-        <label>What do you plan to do?</label>
-        <div class="input-group">
-          <span class="">Description</span>
-          <textarea name="name" rows="1"></textarea>
-        </div>
-        <label>When?</label>
-        <div class="input-group">
-          <span class="">Time</span>
-          <input class="" type="password" name="" value="">
-        </div>
-      </div>
 
-      <div class="event__side__btn">
-        <button class="btn-same c2" type="button" name="button">Create Event</button>
-      </div>
+        <div class="event__side__btn">
+          <button class="btn-same c2" type="button" name="button">Create Event</button>
+        </div>
+
+      </form>
 
     </div>
 
