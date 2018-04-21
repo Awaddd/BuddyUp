@@ -94,9 +94,7 @@
       </div>
     </div>
 
-    <form class="" action="Events/createEvent" method="post">
-    <div class="event__side">
-
+    <form class="event__side" action="<?php echo URLROOT?>/events/createEvent" method="post">
       <div class="event__side__title">
         Create Event
       </div>
@@ -135,7 +133,6 @@
 
 
 
-    </div>
     </form>
   </div>
 
