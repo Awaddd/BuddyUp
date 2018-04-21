@@ -60,7 +60,8 @@
         $this->eventModel->createEvent($user, $data);
 
       } else {
-        redirect("events");
+        // redirect("events");
+        echo "wat";
       }
 
     }
