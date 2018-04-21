@@ -1,7 +1,7 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 
 
-<div class="event__body background-purple-gradient">
+<div class="event__body background-purple-gradient" id="eventbody">
 
   <?php  require APPROOT . '/views/inc/nav.php'; ?>
 
