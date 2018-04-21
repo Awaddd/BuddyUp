@@ -6,6 +6,7 @@
 
       $this->eventModel = $this->model("Event");
       $this->userModel = $this->model("User");
+      $this->matchModel = $this->model("Match");
 
 
       if(!isLoggedIn()){
@@ -16,9 +17,9 @@
     public function index(){
 
       $user = $_SESSION['User_ID'];
-      $role = getUserRole($user);
+      $role = $this->userModel->getUserRole($user);
 
-      $matches = getMatches($user, $role)
+      $matches = $this->matchModel->getMatches($user, $role)
 
       $data = [
         "match" => $matches
@@ -29,7 +30,7 @@
     public function createEvent(){
 
       $user = $_SESSION['User_ID'];
-      $role = getUserRole($user);
+      $role = $this->userModel->getUserRole($user);
 
       if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
