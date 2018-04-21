@@ -47,23 +47,19 @@
           ];
 
           // If the user is a buddy
-        // } else if ($role->Role_ID === 2){
-        //   $data =[
-        //     "eventName" => trim($_POST['name']),
-        //     "description" => trim($_POST['description']),
-        //     "eventTime" => trim($_POST['time']),
-        //     "tourist" => trim($_POST['match']),
-        //     "buddy" => $user
-        //   ];
-        // }
+        } else if ($role->Role_ID === 2){
+          $data =[
+            "eventName" => trim($_POST['name']),
+            "description" => trim($_POST['description']),
+            "eventTime" => trim($_POST['time']),
+            "tourist" => trim($_POST['match']),
+            "buddy" => $user
+          ];
+        }
 
-        print_r($data);
-      }
-      print_r($data);
+        $this->eventModel->createEvent($user, $data);
 
-        // $this->eventModel->createEvent($user, $data);
-
-        // redirect("events");
+        redirect("events");
 
       } else {
         redirect("events");
