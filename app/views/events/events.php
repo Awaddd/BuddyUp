@@ -94,12 +94,13 @@
       </div>
     </div>
 
+    <form class="" action="Events/createEvent" method="post">
     <div class="event__side">
 
       <div class="event__side__title">
         Create Event
       </div>
-      <form class="" action="events/createEvent" method="post">
+
 
         <div class="event__side__content">
           <label>Give the event a title</label>
@@ -132,10 +133,10 @@
           <button class="btn-same c2" type="button" name="button">Create Event</button>
         </div>
 
-      </form>
+
 
     </div>
-
+    </form>
   </div>
 
 </div>
