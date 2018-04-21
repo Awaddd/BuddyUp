@@ -19,7 +19,7 @@
       $user = $_SESSION['User_ID'];
       $role = $this->userModel->getUserRole($user);
 
-      $matches = $this->matchModel->getMatches($user, $role);
+      $matches = $this->matchModel->getMatches($user, $role->Role_ID);
 
       $data = [
         "matches" => $matches
