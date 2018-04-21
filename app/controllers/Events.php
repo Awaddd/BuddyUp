@@ -59,6 +59,8 @@
 
         print_r($data);
       }
+      print_r($data);
+
         // $this->eventModel->createEvent($user, $data);
 
         // redirect("events");
