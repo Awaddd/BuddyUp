@@ -16,7 +16,7 @@
                         ON matches.Buddy_ID = users.User_ID
                         WHERE matches.Tourist_ID = :user_id");
       } else if($role == 2){
-      $this->db->query("SELECT users.User_ID, matches.Buddy_ID, users.FirstName, users.LastName,
+      $this->db->query("SELECT users.User_ID, matches.Tourist_ID, users.FirstName, users.LastName,
                       users.DateOfBirth, users.Gender, users.Bio
                       FROM matches
                       INNER JOIN users
