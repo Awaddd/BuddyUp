@@ -58,10 +58,10 @@
         }
 
         $this->eventModel->createEvent($user, $data);
+        redirect("events");
 
       } else {
-        // redirect("events");
-        echo "wat";
+        redirect("events");
       }
 
     }
