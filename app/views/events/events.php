@@ -128,7 +128,7 @@
         </div>
 
         <div class="event__side__btn">
-          <button class="btn-same c2" type="button" name="button">Create Event</button>
+          <input type="submit" class="btn-same c2" name="createEvent" value="Create Event">
         </div>
 
 
