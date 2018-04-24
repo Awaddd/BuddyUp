@@ -232,8 +232,13 @@ a{
 
   .validation__errors{
     text-align: center;
-    position: static;
+    position: static !important;
     grid-gap: 5px;
+  }
+
+  .validation__errors div{
+    box-shadow: none;
+    border: 1px solid rgb(186, 186, 186);
   }
 
   .login__body, .register__body{
