@@ -192,7 +192,21 @@
   grid-auto-rows: max-content;
 }
 
+/* Feedback modal */
 .manage-feedback{
   width:  800px;
   min-height: 100px;
+}
+
+.rec-feedback-body{
+
+}
+
+.display__feedback{
+
+}
+
+.feedback__panel{
+  display: grid;
+  background: #fff;
 }

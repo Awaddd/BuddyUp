@@ -209,7 +209,6 @@ require APPROOT . '/views/inc/header.php';
           <div class="feedback__panel">
 
             <div class="feedback__top">
-              <span>5/5</span>
               <div class="feedback__top__description">
                 Great Tour. Enjoyed sightseeing with you and I look forward to the next.
               </div>
@@ -217,7 +216,7 @@ require APPROOT . '/views/inc/header.php';
 
             <div class="feedback__bottom">
               <div class="">
-
+                Rating: 5/5
               </div>
               <div class="">
                 From Kashif
