@@ -196,6 +196,7 @@
 .manage-feedback{
   width:  800px;
   min-height: 100px;
+  height: 600px;
 }
 
 .rec-feedback-body{
@@ -206,6 +207,8 @@
   display: grid;
   width: 650px;
   margin: 0 auto;
+  max-height: 370px;
+  overflow-y: auto;
 }
 
 .feedback__panel{
