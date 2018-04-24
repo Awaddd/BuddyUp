@@ -132,7 +132,7 @@ require APPROOT . '/views/inc/header.php';
         <span>Personal</span>
         <span id="manage-personal-exit" class="modal__exit">&times;</span>
       </div>
-      <div class="modal__body">
+      <form class="modal__body">
         <p>Enter your new details</p>
         <div class="input-group">
           <span class="">First name</span>
@@ -161,10 +161,10 @@ require APPROOT . '/views/inc/header.php';
         </div>
 
         <div class="profile__window__button">
-          <button type="button" class="btn-same c2" type="button" name="" >Save Changes</button>
+          <button type="button" class="btn-same c2" type="button" name="updatePersonal" >Save Changes</button>
         </div>
 
-      </div>
+      </form>
     </div>
   </div>
 
