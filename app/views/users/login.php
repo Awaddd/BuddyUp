@@ -26,10 +26,6 @@
 
   </div>
 
-  <!-- <div style="color: #fff; padding-left: 15px;" class="temp"><span style="color: red;">TEMP Location for errors:<br></span>
-    <span>
-  </div> -->
-
   <?php if (!empty($data['uname_err']) || !empty($data['password_err'])): ?>
     <div class="validation__errors">
       <?php if(!empty( $data['uname_err'] )): ?>
