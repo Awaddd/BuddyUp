@@ -91,9 +91,7 @@
             "password" => $user->Password,
             "email" => $user->Email,
             "reg" => $user->reg_date,
-            "interests" => $interests,
-            "myFeedback" => $allFeedback,
-            "sentFeedback" => $sentFeedback
+            "interests" => $interests
           ];
         }
         // $this->interestModel = $this->addInterest($interest);
@@ -114,9 +112,7 @@
         "password" => $user->Password,
         "email" => $user->Email,
         "reg" => $user->reg_date,
-        "interests" => $interests,
-        "myFeedback" => $allFeedback,
-        "sentFeedback" => $sentFeedback
+        "interests" => $interests
       ];
       $this->view('profile/profile', $data);
     }
