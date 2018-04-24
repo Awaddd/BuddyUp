@@ -28,14 +28,14 @@
 
 
     public function displayEvent($user, $role){
-      if ($role == 1) {
+      if ($role->Role_ID == 1) {
 
         $this->db->query("SELECT users.FirstName, event.Name, event.Description, event.ReminderTime FROM event
                           INNER JOIN users
                           ON event.Buddy_ID = users.User_ID
                           where Tourist_ID = :user");
 
-      } else if ($role == 2){
+      } else if ($role->Role_ID == 2){
 
         $this->db->query("SELECT users.FirstName, event.Name, event.Description, event.ReminderTime FROM event
                           INNER JOIN users
