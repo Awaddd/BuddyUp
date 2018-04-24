@@ -73,7 +73,7 @@
         <?php if (!empty($data['uname_err']) || !empty($data['password_err']) || !empty($data['cpassword_err']) || !empty($data['role_err']) || !empty($data['fname_err']) || !empty($data['lname_err']) ||
           !empty($data['email_err']) || !empty($data['dob_err']) || !empty($data['gender_err'])): ?>
 
-          <div class="validation_errors">
+          <div class="validation__errors">
             <?php if(!empty( $data['uname_err'] )): ?>
               <div class=""><?= $data['uname_err'] ?></div>
             <?php endif; ?>
