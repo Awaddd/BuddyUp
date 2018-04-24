@@ -205,7 +205,30 @@ require APPROOT . '/views/inc/header.php';
         <span id="manage-rec-exit" class="modal__exit">&times;</span>
       </div>
       <div class="modal__body rec-feedback-body">
-        rec
+        <div class="display__feedback">
+          <div class="feedback__panel">
+
+            <div class="feedback__top">
+              <span>5/5</span>
+              <div class="feedback__top__description">
+                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
+              </div>
+            </div>
+
+            <div class="feedback__bottom">
+              <div class="">
+
+              </div>
+              <div class="">
+                From Kashif
+              </div>
+              <div class="">
+                31st June
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -217,7 +240,11 @@ require APPROOT . '/views/inc/header.php';
         <span id="manage-sent-exit" class="modal__exit">&times;</span>
       </div>
       <div class="modal__body sent-feedback-body">
-        sent
+
+
+      PASTE HERE
+
+
       </div>
     </div>
   </div>
