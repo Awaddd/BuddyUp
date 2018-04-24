@@ -130,7 +130,7 @@
 }
 
 .event__side__content{
-  padding: 0 15px;
+  padding: 0 30px;
   display: grid;
   grid-auto-rows: max-content;
   grid-gap: 10px;
