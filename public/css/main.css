@@ -230,23 +230,37 @@ a{
 /*media queries*/
 @media screen and  (max-width:450px) {
 
+  .validation__errors{
+    text-align: center;
+    position: static;
+    grid-gap: 5px;
+  }
+
   .login__body, .register__body{
-    background: -webkit-linear-gradient(to right, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #fff;
+    color: black;
     overflow: hidden;
   }
   .login__content{
-    width: 99%;
+    margin: 0 auto;
     border: none;
     align-self: start;
     box-shadow: none;
+    background: none;
+    color: black;
   }
 
   .register__content{
-    width: 99%;
+    margin: 0 auto;
     border: none;
     align-self: start;
     box-shadow: none;
+    background: none;
+    color: black;
+  }
+
+  .mainBtn{
+    grid-gap: 5px;
   }
 
   .home__bigtext{
