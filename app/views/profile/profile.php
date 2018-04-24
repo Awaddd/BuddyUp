@@ -24,8 +24,8 @@ require APPROOT . '/views/inc/header.php';
         </div>
       </div>
       <div class="profile__header__button">
-        <button class="btno_col xl" type="button" name="button">My Feedback</button>
-        <button class="btno_grey xl" type="button" name="button">Given Feedback</button>
+        <button class="btno_col" type="button" name="button" id="manage_rec_btn">My Feedback</button>
+        <button class="btno_grey" type="button" name="button" id="manage_sent_btn">Given Feedback</button>
       </div>
     </div>
 
@@ -194,6 +194,30 @@ require APPROOT . '/views/inc/header.php';
         <div class="profile__window__button">
           <button class="btn-same c2" type="button" name="button">Save changes</button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="manage-rec-feedback" class="modal">
+    <div class="modal__content manage-feedback">
+      <div class="modal__header">
+        <span>Received Feedback</span>
+        <span id="manage-rec-exit" class="modal__exit">&times;</span>
+      </div>
+      <div class="modal__body rec-feedback-body">
+        rec
+      </div>
+    </div>
+  </div>
+
+  <div id="manage-sent-feedback" class="modal">
+    <div class="modal__content manage-feedback">
+      <div class="modal__header">
+        <span>Sent Feedback</span>
+        <span id="manage-sent-exit" class="modal__exit">&times;</span>
+      </div>
+      <div class="modal__body sent-feedback-body">
+        sent
       </div>
     </div>
   </div>

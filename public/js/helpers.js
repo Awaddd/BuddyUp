@@ -112,6 +112,35 @@ manage_account_exit.on('click', function(){
 });
 
 
+// Manage sent feedback
+var manage_sent = $("#manage-sent-feedback");
+var manage_sent_btn = $("#manage-sent-btn");
+var manage_sent_exit = $("#manage-sent-exit");
+
+manage_sent_btn.on('click', function(){
+  manage_sent.show();
+});
+manage_sent_exit.on('click', function(){
+  manage_sent.hide();
+});
+
+// Manag rec feedback
+var manage_rec = $("#manage-rec-feedback");
+var manage_rec_btn = $("#manage-rec-btn");
+var manage_rec_exit = $("#manage-rec-exit");
+
+manage_rec_btn.on('click', function(){
+  manage_rec.show();
+});
+manage_rec_exit.on('click', function(){
+  manage_rec.hide();
+});
+
+
+
+
+
+
 
 // Highlight current page link
 
