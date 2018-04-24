@@ -24,8 +24,8 @@ require APPROOT . '/views/inc/header.php';
         </div>
       </div>
       <div class="profile__header__button">
-        <button class="btno_col" type="button" name="button" id="manage-rec-btn">My Feedback</button>
-        <button class="btno_grey" type="button" name="button" id="manage-sent-btn">Given Feedback</button>
+        <button class="btn-same c1" type="button" name="button" id="manage-rec-btn">My Feedback</button>
+        <button class="btn-same c2" type="button" name="button" id="manage-sent-btn">Sent Feedback</button>
       </div>
     </div>
 
