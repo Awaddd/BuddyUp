@@ -37,13 +37,13 @@
         $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
         // If the user is a tourist
-        if ($role->Role_ID === 1) {
+        if ($role->Role_ID == 1) {
           $data = [
 
           ];
     echo "role 1";
           // If the user is a buddy
-        } else if ($role->Role_ID === 2){
+        } else if ($role->Role_ID == 2){
           $data = [
 
           ];
