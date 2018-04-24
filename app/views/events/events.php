@@ -44,7 +44,7 @@
           <div class="event__panel">
             <div class="event__panel__content">
               <div class="event__panel__header">
-                <div class="event__title"><?= $event->Name ?>
+                <div class="event__title">with <?= $event->Name ?>
                 <span class="event__with"><?= $event->FirstName ?></span></div>
                 <div class="event__time"><?= $reminderTime ?></div>
               </div>
