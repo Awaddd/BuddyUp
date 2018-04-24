@@ -232,7 +232,7 @@ require APPROOT . '/views/inc/header.php';
           </div>
           <?php endforeach; ?>
 
-          <div class="feedback__panel">
+          <!-- <div class="feedback__panel">
             <div class="feedback__top">
               <div class="feedback__top__description">
                 Great Tour. Enjoyed sightseeing with you and I look forward to the next.
@@ -249,6 +249,10 @@ require APPROOT . '/views/inc/header.php';
                 31st June
               </div>
             </div>
+          </div> -->
+        <?php elseif: ?>
+          <div class="">
+            No feedback to display
           </div>
         <?php endif; ?>
         </div>
@@ -292,7 +296,7 @@ require APPROOT . '/views/inc/header.php';
             </div>
             <?php endforeach; ?>
 
-          <div class="feedback__panel">
+          <!-- <div class="feedback__panel">
             <div class="feedback__top">
               <div class="feedback__top__description">
                 Great Tour. Enjoyed sightseeing with you and I look forward to the next.
@@ -309,8 +313,11 @@ require APPROOT . '/views/inc/header.php';
                 31st June
               </div>
             </div>
+          </div> -->
+        <?php elseif: ?>
+          <div class="">
+            No feedback to display
           </div>
-
         <?php endif; ?>
         </div>
 
