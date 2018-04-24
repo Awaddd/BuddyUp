@@ -39,7 +39,7 @@
         </div>
 
         <?php foreach ($data['events'] as $event):
-          $reminderTime = date('hh:mm:ss', strtotime($event->ReminderTime));
+          $reminderTime = date('d,M H:i:s', strtotime($event->ReminderTime));
           ?>
           <div class="event__panel">
             <div class="event__panel__content">
