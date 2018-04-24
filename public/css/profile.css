@@ -191,3 +191,8 @@
   display: grid;
   grid-auto-rows: max-content;
 }
+
+.manage-feedback{
+  width:  800px;
+  min-height: 100px;
+}
