@@ -7,6 +7,7 @@
       $this->userModel = $this->model("User");
       $this->userInterestModel = $this->model("UserInterest");
       $this->interestModel = $this->model("Interest");
+      $this->feedbackModel = $this->model("Feedback");
 
       if(!isLoggedIn()){
         redirect('users/login');
@@ -18,6 +19,9 @@
       $userID = $_SESSION['User_ID'];
       $user = $this->userModel->getUser($userID);
       $interests = $this->userInterestModel->getInterests($userID);
+
+      $allFeedback = $this->feedbackModel->getFeedback($userID);
+      $sentFeedback = $this->feedbackModel->getSentFeedback($userID);
 
       $available = "";
       $unavailable = "";
@@ -84,7 +88,9 @@
             "password" => $user->Password,
             "email" => $user->Email,
             "reg" => $user->reg_date,
-            "interests" => $interests
+            "interests" => $interests,
+            "myFeedback" => $allFeedback,
+            "sentFeedback" => $sentFeedback
           ];
         }
         // $this->interestModel = $this->addInterest($interest);
@@ -105,7 +111,9 @@
         "password" => $user->Password,
         "email" => $user->Email,
         "reg" => $user->reg_date,
-        "interests" => $interests
+        "interests" => $interests,
+        "myFeedback" => $allFeedback,
+        "sentFeedback" => $sentFeedback
       ];
       $this->view('profile/profile', $data);
     }
