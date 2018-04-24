@@ -206,6 +206,28 @@ require APPROOT . '/views/inc/header.php';
       </div>
       <div class="modal__body">
         <div class="display__feedback">
+        <?php if (isset($data['myFeedback'])): ?>
+
+          <?php foreach($data['myFeedback'] as $feedback) ?>
+          <div class="feedback__panel">
+            <div class="feedback__top">
+              <div class="feedback__top__description">
+                <?= $feedback->Description ?>
+              </div>
+            </div>
+            <div class="feedback__bottom">
+              <div class="">
+                <?= $feedback->Rating ?>/5
+              </div>
+              <div class="">
+                <?= $feedback->FirstName ?>
+              </div>
+              <div class="">
+                <?= $feedback->FeedbackDate ?>
+              </div>
+            </div>
+          </div>
+          <?php endforeach; ?>
 
           <div class="feedback__panel">
             <div class="feedback__top">
@@ -225,26 +247,7 @@ require APPROOT . '/views/inc/header.php';
               </div>
             </div>
           </div>
-
-          <div class="feedback__panel">
-            <div class="feedback__top">
-              <div class="feedback__top__description">
-                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
-              </div>
-            </div>
-            <div class="feedback__bottom">
-              <div class="">
-                Rating: 5/5
-              </div>
-              <div class="">
-                From Kashif
-              </div>
-              <div class="">
-                31st June
-              </div>
-            </div>
-          </div>
-
+        <?php endif; ?>
         </div>
       </div>
     </div>
