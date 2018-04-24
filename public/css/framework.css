@@ -58,13 +58,17 @@ html, body{
 }
 
 
-.validation_errors{
+.validation__errors{
   position: absolute;
-  top: 48%;
-  left: 20%;
-  /* justify-self: start;
-  align-self: center; */
-  background: #ecece8;
+  top: 35%;
+  left: 25%;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.validation__errors div{
+  background: #fff;
+  padding: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 1.5px 1px rgba(0, 0, 0, 0.23);
 }
 
