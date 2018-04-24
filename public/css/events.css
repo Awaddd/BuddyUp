@@ -30,7 +30,7 @@
 }
 
 .event__window{
-  grid-template-rows: max-content 5fr 1fr;
+  grid-template-rows: max-content 3fr 1fr;
   grid-gap: 10px;
   padding: 10px 50px 10px 50px;
 }
