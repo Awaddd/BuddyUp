@@ -38,7 +38,7 @@
           "receiver" => trim($_POST['receiver'])
         ];
         $this->feedbackModel->createFeedback($user, $data);
-        redirect("feedbacks/displayFeedback");
+        redirect("Buddies");
       }
 
     }
@@ -55,7 +55,8 @@
           "receiver" => $receiver
         ];
 
-        $this->view('feedback/feedback', $data);
+        redirect("Buddies");
+
       } else {
         // redirect("home");
       }
