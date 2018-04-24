@@ -69,17 +69,27 @@
         </div>
       </form>
 
-        <div style="color: #fff; padding-left: 15px;" class="temp"><span style="color: red;">TEMP Location for errors:<br></span>
-          <span>
-          <?php echo $data['uname_err'] . "<br>";
-            echo $data['password_err'] . "<br>";
-            echo $data['cpassword_err'] . "<br>";
-            echo $data['role_err'] . "<br>";
-            echo $data['fname_err']. "<br>";
-            echo $data['lname_err']. "<br>";
-            echo $data['email_err']. "<br>";
-            echo $data['dob_err']  . "<br>";
-            echo $data['gender_err'] ?> </span>
+        <!-- <div style="color: #fff; padding-left: 15px;" class="temp"><span style="color: red;">TEMP Location for errors:<br></span> -->
+          <div class="validation_errors">
+            <?php if(isset( $data['uname_err'] )): ?>
+              <div class=""><?= $data['uname_err'] ?></div>
+            <?php elseif(isset( $data['password_err'] )): ?>
+              <div class=""><?= $data['password_err'] ?></div>
+            <?php elseif(isset( $data['cpassword_err'] )): ?>
+              <div class=""><?= $data['cpassword_err'] ?></div>
+            <?php elseif(isset( $data['role_err'] )): ?>
+              <div class=""><?= $data['role_err'] ?></div>
+            <?php elseif(isset( $data['fname_err'] )): ?>
+              <div class=""><?= $data['fname_err'] ?></div>
+            <?php elseif(isset( $data['lname_err'] )): ?>
+              <div class=""><?= $data['lname_err'] ?></div>
+            <?php elseif(isset( $data['email_err'] )): ?>
+              <div class=""><?= $data['email_err'] ?></div>
+            <?php elseif(isset( $data['dob_err'] )): ?>
+              <div class=""><?= $data['dob_err'] ?></div>
+            <?php elseif(isset( $data['gender_err'] )): ?>
+              <div class=""><?= $data['gender_err'] ?></div>
+            <?php endif; ?>
         </div>
 
   </div>
