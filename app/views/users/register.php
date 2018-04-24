@@ -70,28 +70,29 @@
       </form>
 
         <!-- <div style="color: #fff; padding-left: 15px;" class="temp"><span style="color: red;">TEMP Location for errors:<br></span> -->
-          <?php if (!empty($data['uname_err']) || !empty($data['password_err']) || !empty($data['cpassword_err']) || !empty($data['role_err']) || !empty($data['fname_err']) || !empty($data['lname_err']) ||
+        <?php if (!empty($data['uname_err']) || !empty($data['password_err']) || !empty($data['cpassword_err']) || !empty($data['role_err']) || !empty($data['fname_err']) || !empty($data['lname_err']) ||
           !empty($data['email_err']) || !empty($data['dob_err']) || !empty($data['gender_err'])): ?>
+
           <div class="validation_errors">
-
+            <?php if(!empty( $data['uname_err'] )): ?>
               <div class=""><?= $data['uname_err'] ?></div>
-
+            <?php elseif(!empty( $data['password_err'] )): ?>
               <div class=""><?= $data['password_err'] ?></div>
-
+            <?php elseif(!empty( $data['cpassword_err'] )): ?>
               <div class=""><?= $data['cpassword_err'] ?></div>
-
+            <?php elseif(!empty( $data['role_err'] )): ?>
               <div class=""><?= $data['role_err'] ?></div>
-
+            <?php elseif(!empty( $data['fname_err'] )): ?>
               <div class=""><?= $data['fname_err'] ?></div>
-
+            <?php elseif(!empty( $data['lname_err'] )): ?>
               <div class=""><?= $data['lname_err'] ?></div>
-
+            <?php elseif(!empty( $data['email_err'] )): ?>
               <div class=""><?= $data['email_err'] ?></div>
-
+            <?php elseif(!empty( $data['dob_err'] )): ?>
               <div class=""><?= $data['dob_err'] ?></div>
-
+            <?php elseif(!empty( $data['gender_err'] )): ?>
               <div class=""><?= $data['gender_err'] ?></div>
-
+            <?php endif; ?>
         </div>
         <?php endif; ?>
   </div>
