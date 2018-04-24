@@ -266,81 +266,31 @@ require APPROOT . '/views/inc/header.php';
 
         <div class="display__feedback">
 
-          <div class="feedback__panel">
-            <div class="feedback__top">
-              <div class="feedback__top__description">
-                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
-              </div>
-            </div>
-            <div class="feedback__bottom">
-              <div class="">
-                Rating: 5/5
-              </div>
-              <div class="">
-                To Julie
-              </div>
-              <div class="">
-                31st June
-              </div>
-            </div>
-          </div>
+          <?php if (isset($data['sentFeedback'])): ?>
 
-          <div class="feedback__panel">
-            <div class="feedback__top">
-              <div class="feedback__top__description">
-                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
-              </div>
-            </div>
-            <div class="feedback__bottom">
-              <div class="">
-                Rating: 5/5
-              </div>
-              <div class="">
-                To James
-              </div>
-              <div class="">
-                31st June
-              </div>
-            </div>
-          </div>
+            <?php foreach($data['sentFeedback'] as $sentFeedback):
+              $feedbackDate = date('jS M', strtotime($sentFeedback->FeedbackDate));
 
-          <div class="feedback__panel">
-            <div class="feedback__top">
-              <div class="feedback__top__description">
-                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
+              ?>
+            <div class="feedback__panel">
+              <div class="feedback__top">
+                <div class="feedback__top__description">
+                  <?= $sentFeedback->Description ?>
+                </div>
+              </div>
+              <div class="feedback__bottom">
+                <div class="">
+                  Rating: <?= $sentFeedback->Rating ?>/5
+                </div>
+                <div class="">
+                  To <?= $sentFeedback->FirstName ?>
+                </div>
+                <div class="">
+                  <?= $feedbackDate ?>
+                </div>
               </div>
             </div>
-            <div class="feedback__bottom">
-              <div class="">
-                Rating: 5/5
-              </div>
-              <div class="">
-                To Dawa
-              </div>
-              <div class="">
-                31st June
-              </div>
-            </div>
-          </div>
-
-          <div class="feedback__panel">
-            <div class="feedback__top">
-              <div class="feedback__top__description">
-                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
-              </div>
-            </div>
-            <div class="feedback__bottom">
-              <div class="">
-                Rating: 5/5
-              </div>
-              <div class="">
-                To Awad
-              </div>
-              <div class="">
-                31st June
-              </div>
-            </div>
-          </div>
+            <?php endforeach; ?>
 
           <div class="feedback__panel">
             <div class="feedback__top">
@@ -361,6 +311,7 @@ require APPROOT . '/views/inc/header.php';
             </div>
           </div>
 
+        <?php endif; ?>
         </div>
 
       </div>
