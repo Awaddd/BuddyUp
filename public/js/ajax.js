@@ -27,6 +27,13 @@ $("#add-interest-form").submit(function (event){
       $('#interest-list').animate({
           scrollTop: $('#interest-list').get(0).scrollHeight
       }, 1500);
+
+      // Off pop up list
+      $("#interest-list-off").append('<span>' + msg + '</span>');
+      $('#interest-list-off').animate({
+          scrollTop: $('#interest-list').get(0).scrollHeight
+      }, 1500);
+
     }
   });
 

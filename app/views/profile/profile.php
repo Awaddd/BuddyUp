@@ -98,7 +98,7 @@ require APPROOT . '/views/inc/header.php';
         <div class="profile__side__header">
           Interests
         </div>
-        <div class="profile__side__content" id="interest-list">
+        <div class="profile__side__content" id="interest-list-off">
           <!-- <span>Basketball</span>
           <span>Skiing</span>
           <span>Golf</span>
