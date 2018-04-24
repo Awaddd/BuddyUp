@@ -204,7 +204,7 @@ require APPROOT . '/views/inc/header.php';
         <span>Received Feedback</span>
         <span id="manage-rec-exit" class="modal__exit">&times;</span>
       </div>
-      <div class="modal__body rec-feedback-body">
+      <div class="modal__body">
         <div class="display__feedback">
 
           <div class="feedback__panel">
@@ -313,11 +313,106 @@ require APPROOT . '/views/inc/header.php';
         <span>Sent Feedback</span>
         <span id="manage-sent-exit" class="modal__exit">&times;</span>
       </div>
-      <div class="modal__body sent-feedback-body">
+      <div class="modal__body">
 
+        <div class="display__feedback">
 
-      PASTE HERE
+          <div class="feedback__panel">
+            <div class="feedback__top">
+              <div class="feedback__top__description">
+                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
+              </div>
+            </div>
+            <div class="feedback__bottom">
+              <div class="">
+                Rating: 5/5
+              </div>
+              <div class="">
+                To Julie
+              </div>
+              <div class="">
+                31st June
+              </div>
+            </div>
+          </div>
 
+          <div class="feedback__panel">
+            <div class="feedback__top">
+              <div class="feedback__top__description">
+                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
+              </div>
+            </div>
+            <div class="feedback__bottom">
+              <div class="">
+                Rating: 5/5
+              </div>
+              <div class="">
+                To James
+              </div>
+              <div class="">
+                31st June
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__panel">
+            <div class="feedback__top">
+              <div class="feedback__top__description">
+                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
+              </div>
+            </div>
+            <div class="feedback__bottom">
+              <div class="">
+                Rating: 5/5
+              </div>
+              <div class="">
+                To Dawa
+              </div>
+              <div class="">
+                31st June
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__panel">
+            <div class="feedback__top">
+              <div class="feedback__top__description">
+                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
+              </div>
+            </div>
+            <div class="feedback__bottom">
+              <div class="">
+                Rating: 5/5
+              </div>
+              <div class="">
+                To Awad
+              </div>
+              <div class="">
+                31st June
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__panel">
+            <div class="feedback__top">
+              <div class="feedback__top__description">
+                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
+              </div>
+            </div>
+            <div class="feedback__bottom">
+              <div class="">
+                Rating: 5/5
+              </div>
+              <div class="">
+                To Kashif
+              </div>
+              <div class="">
+                31st June
+              </div>
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </div>
