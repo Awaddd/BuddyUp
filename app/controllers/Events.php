@@ -22,7 +22,7 @@
       $matches = $this->matchModel->getMatches($user, $role->Role_ID);
 
       $events = $this->eventModel->displayEvent($user, $role);
-
+      print_r($events);
       $data = [
         "matches" => $matches,
         "events" => $events
