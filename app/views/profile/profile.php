@@ -206,7 +206,7 @@ require APPROOT . '/views/inc/header.php';
       </div>
       <div class="modal__body">
         <div class="display__feedback">
-        <?php if (isset($data['myFeedback'])): ?>
+        <?php if (!empty($data['myFeedback'])): ?>
 
           <?php foreach($data['myFeedback'] as $feedback):
             $feedbackDate = date('jS M', strtotime($feedback->FeedbackDate));
@@ -270,7 +270,7 @@ require APPROOT . '/views/inc/header.php';
 
         <div class="display__feedback">
 
-          <?php if (isset($data['sentFeedback'])): ?>
+          <?php if (!empty($data['sentFeedback'])): ?>
 
             <?php foreach($data['sentFeedback'] as $sentFeedback):
               $feedbackDate = date('jS M', strtotime($sentFeedback->FeedbackDate));
@@ -314,7 +314,7 @@ require APPROOT . '/views/inc/header.php';
               </div>
             </div>
           </div> -->
-        <?php elseif(empty($data['myFeedback'])): ?>
+        <?php elseif(empty($data['sentFeedback'])): ?>
           <div class="">
             No feedback to display
           </div>
