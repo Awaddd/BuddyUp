@@ -62,7 +62,7 @@ if (isset($data['Feedback'])) : ?>
           <span></span>
         </div>
 
-        <textarea class="feedback" name="description" required>Enter Feedback Here</textarea>
+        <textarea class="feedback" name="description" required placeholder="Enter your feedback"></textarea>
 
         <input type="submit" class="btn--feedback" value="SEND">
 
