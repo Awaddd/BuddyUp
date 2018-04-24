@@ -225,7 +225,6 @@
   text-align: center;
 }
 
-}
 .feedback__bottom{
   display: grid;
   grid-template-columns: repeat(3, max-content);
