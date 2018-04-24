@@ -70,28 +70,29 @@
       </form>
 
         <!-- <div style="color: #fff; padding-left: 15px;" class="temp"><span style="color: red;">TEMP Location for errors:<br></span> -->
+          <?php if ($data): ?>
           <div class="validation_errors">
-            <?php if(isset( $data['uname_err'] )): ?>
-              <div class=""><?= $data['uname_err'] ?></div>
-            <?php elseif(isset( $data['password_err'] )): ?>
-              <div class=""><?= $data['password_err'] ?></div>
-            <?php elseif(isset( $data['cpassword_err'] )): ?>
-              <div class=""><?= $data['cpassword_err'] ?></div>
-            <?php elseif(isset( $data['role_err'] )): ?>
-              <div class=""><?= $data['role_err'] ?></div>
-            <?php elseif(isset( $data['fname_err'] )): ?>
-              <div class=""><?= $data['fname_err'] ?></div>
-            <?php elseif(isset( $data['lname_err'] )): ?>
-              <div class=""><?= $data['lname_err'] ?></div>
-            <?php elseif(isset( $data['email_err'] )): ?>
-              <div class=""><?= $data['email_err'] ?></div>
-            <?php elseif(isset( $data['dob_err'] )): ?>
-              <div class=""><?= $data['dob_err'] ?></div>
-            <?php elseif(isset( $data['gender_err'] )): ?>
-              <div class=""><?= $data['gender_err'] ?></div>
-            <?php endif; ?>
-        </div>
 
+              <div class=""><?= $data['uname_err'] ?></div>
+
+              <div class=""><?= $data['password_err'] ?></div>
+
+              <div class=""><?= $data['cpassword_err'] ?></div>
+
+              <div class=""><?= $data['role_err'] ?></div>
+
+              <div class=""><?= $data['fname_err'] ?></div>
+
+              <div class=""><?= $data['lname_err'] ?></div>
+
+              <div class=""><?= $data['email_err'] ?></div>
+
+              <div class=""><?= $data['dob_err'] ?></div>
+
+              <div class=""><?= $data['gender_err'] ?></div>
+
+        </div>
+        <?php endif; ?>
   </div>
 
 <?php require APPROOT . '/views/inc/footer.php' ?>
