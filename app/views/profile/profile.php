@@ -208,7 +208,7 @@ require APPROOT . '/views/inc/header.php';
         <div class="display__feedback">
         <?php if (isset($data['myFeedback'])): ?>
 
-          <?php foreach($data['myFeedback'] as $feedback) ?>
+          <?php foreach($data['myFeedback'] as $feedback): ?>
           <div class="feedback__panel">
             <div class="feedback__top">
               <div class="feedback__top__description">
