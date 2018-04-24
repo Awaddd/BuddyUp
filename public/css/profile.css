@@ -203,10 +203,35 @@
 }
 
 .display__feedback{
-
+  display: grid;
+  width: 650px;
+  margin: 0 auto;
 }
 
 .feedback__panel{
   display: grid;
+  grid-template-rows: 3fr max-content;
   background: #fff;
+  color: #707070;
+  width: 550px;
+  justify-self: center;
+}
+
+.feedback__top{
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 80%;
+  justify-self: center;
+  text-align: center;
+}
+
+}
+.feedback__bottom{
+  display: grid;
+      grid-template-columns: repeat(3, max-content);
+      justify-items: center;
+      justify-content: center;
+      grid-gap: 40px;
+      padding: 10px;
+      margin: 0 auto;
 }
