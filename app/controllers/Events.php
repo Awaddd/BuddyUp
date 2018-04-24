@@ -21,8 +21,11 @@
 
       $matches = $this->matchModel->getMatches($user, $role->Role_ID);
 
+      $events = $this->eventModel->displayEvent($user, $role);
+
       $data = [
-        "matches" => $matches
+        "matches" => $matches,
+        "events" => $events,
       ];
       $this->view('events/events', $data);
     }

@@ -27,4 +27,34 @@
     }
 
 
+    public function displayEvent($user, $role){
+      if ($role == 1) {
+
+        $this->db->query("SELECT users.FirstName, event.Name, event.Description, event.ReminderTime FROM event
+                          INNER JOIN users
+                          ON event.Buddy_ID = users.User_ID
+                          where Tourist_ID = :user");
+
+      } else if ($role == 2){
+
+        $this->db->query("SELECT users.FirstName, event.Name, event.Description, event.ReminderTime FROM event
+                          INNER JOIN users
+                          ON event.Tourist_ID = users.User_ID
+                          where Buddy_ID = :user");
+
+      }
+
+      $this->db->bind(":user", $user);
+
+      $row = $this->db->resultSet();
+
+      if ($row) {
+        return $row;
+      } else {
+        return false;
+      }
+
+    }
+
+
   }

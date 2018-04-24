@@ -17,6 +17,9 @@
         Your Events
       </div>
 
+      <?php if ($data['events']): ?>
+
+
       <div class="event__window__content">
 
         <div class="event__panel">
@@ -33,61 +36,35 @@
           <span class="event__panel__exit">
             &times;
           </span>
-
         </div>
 
-        <div class="event__panel">
-          <div class="event__panel__content">
-            <div class="event__panel__header">
-              <div class="event__title">Picnic
-              <span class="event__with">with Awad</span></div>
-              <div class="event__time">15:30 PM, 16th DEC</div>
+        <?php foreach ($data['events'] as $event):
+          $reminderTime = date('hh:mm:ss', strtotime($event->ReminderTime));
+          ?>
+          <div class="event__panel">
+            <div class="event__panel__content">
+              <div class="event__panel__header">
+                <div class="event__title"><?= $event->Name ?>
+                <span class="event__with"><?= $event->FirstName ?></span></div>
+                <div class="event__time"><?= $reminderTime ?></div>
+              </div>
+              <div class="event__panel__body">
+                <div><?= $event->Description ?></div>
+              </div>
             </div>
-            <div class="event__panel__body">
-              <div>Gonna go on a picnic. You bring everything else.</div>
-            </div>
+            <span class="event__panel__exit">
+              &times;
+            </span>
           </div>
-          <span class="event__panel__exit">
-            &times;
-          </span>
-
-        </div>
-
-        <div class="event__panel">
-          <div class="event__panel__content">
-            <div class="event__panel__header">
-              <div class="event__title">Picnic
-              <span class="event__with">with Awad</span></div>
-              <div class="event__time">15:30 PM, 16th DEC</div>
-            </div>
-            <div class="event__panel__body">
-              <div> I'll bring the snacks. You bring everything else.</div>
-            </div>
-          </div>
-          <span class="event__panel__exit">
-            &times;
-          </span>
-
-        </div>
-
-        <div class="event__panel">
-          <div class="event__panel__content">
-            <div class="event__panel__header">
-              <div class="event__title">Picnic
-              <span class="event__with">with Awad</span></div>
-              <div class="event__time">15:30 PM, 16th DEC</div>
-            </div>
-            <div class="event__panel__body">
-              <div>Gonna go on a picnic. I'll bring the snacks. You bring everything else.</div>
-            </div>
-          </div>
-          <span class="event__panel__exit">
-            &times;
-          </span>
-
-        </div>
+        <?php endforeach; ?>
 
       </div>
+      <?php else: ?>
+        <div class="">
+          No Events to display. Create events using the menu to your right.
+        </div>
+      <?php endif; ?>
+
 
       <div class="event__window__btn">
         <button class="btn-same c2" type="button" name="button">Edit Event</button>
