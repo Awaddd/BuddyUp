@@ -25,7 +25,7 @@
 
       $data = [
         "matches" => $matches,
-        "events" => $events,
+        "events" => $events
       ];
       $this->view('events/events', $data);
     }
