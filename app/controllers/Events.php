@@ -22,12 +22,12 @@
       $matches = $this->matchModel->getMatches($user, $role->Role_ID);
 
       $events = $this->eventModel->displayEvent($user, $role);
-      echo "lol";
-      print_r($events);
+
       $data = [
         "matches" => $matches,
         "events" => $events
       ];
+      
       $this->view('events/events', $data);
     }
 
