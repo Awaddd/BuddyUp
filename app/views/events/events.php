@@ -94,7 +94,7 @@
       </div>
     </div>
 
-    <form class="event__side" action="<?php echo URLROOT?>/events/createEvent" method="post">
+    <form class="event__side" action="<?php echo URLROOT?>/Events/createEvent" method="POST">
       <div class="event__side__title">
         Create Event
       </div>
