@@ -39,18 +39,25 @@
         // If the user is a tourist
         if ($role->Role_ID == 1) {
           $data = [
-
+            "eventName" => trim($_POST['name']),
+            "description" => trim($_POST['description']),
+            "eventTime" => trim($_POST['time']),
+            "tourist" => $user,
+            "buddy" => trim($_POST['match'])
           ];
-    echo "role 1";
+
           // If the user is a buddy
         } else if ($role->Role_ID == 2){
           $data = [
-
+            "eventName" => trim($_POST['name']),
+            "description" => trim($_POST['description']),
+            "eventTime" => trim($_POST['time']),
+            "tourist" => trim($_POST['match']),
+            "buddy" => $user
           ];
-          echo "role 2";
         }
 
-        // $this->eventModel->createEvent($user, $data);
+        $this->eventModel->createEvent($user, $data);
 
         // redirect("events");
         echo "event created";
