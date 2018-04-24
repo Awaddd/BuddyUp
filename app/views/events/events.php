@@ -59,7 +59,7 @@
         <?php endforeach; ?>
 
       </div>
-      <?php else: ?>
+      <?php else if (empty($data['events'])) ?>
         <div class="">
           No Events to display. Create events using the menu to your right.
         </div>
