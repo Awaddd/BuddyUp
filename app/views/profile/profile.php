@@ -251,8 +251,8 @@ require APPROOT . '/views/inc/header.php';
             </div>
           </div> -->
         <?php elseif(empty($data['myFeedback'])): ?>
-          <div class="">
-            No feedback to display
+          <div class="noFeedback">
+            No feedback to display.
           </div>
         <?php endif; ?>
         </div>
@@ -315,7 +315,7 @@ require APPROOT . '/views/inc/header.php';
             </div>
           </div> -->
         <?php elseif(empty($data['sentFeedback'])): ?>
-          <div class="">
+          <div class="noFeedback">
             No feedback to display
           </div>
         <?php endif; ?>
