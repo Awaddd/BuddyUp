@@ -59,12 +59,10 @@
 
         $this->eventModel->createEvent($user, $data);
 
-        // redirect("events");
-        echo "event created";
+        redirect("events");
 
       } else {
-        // redirect("events");
-        echo "No event";
+        redirect("events");
 
       }
 

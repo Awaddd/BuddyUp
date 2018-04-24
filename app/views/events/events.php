@@ -123,7 +123,7 @@
           <label>When?</label>
           <div class="input-group">
             <span class="">Time</span>
-            <input class="" type="time" name="time" value="">
+            <input class="" type="datetime-local" name="time" value="">
           </div>
         </div>
 
