@@ -23,6 +23,7 @@
       $this->view('feedback/feedback', $data);
     }
 
+  //Unused IGNORE
     public function sendFeedback(){
       $user = $_SESSION['User_ID'];
 

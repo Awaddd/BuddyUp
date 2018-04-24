@@ -245,63 +245,6 @@ require APPROOT . '/views/inc/header.php';
             </div>
           </div>
 
-          <div class="feedback__panel">
-            <div class="feedback__top">
-              <div class="feedback__top__description">
-                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
-              </div>
-            </div>
-            <div class="feedback__bottom">
-              <div class="">
-                Rating: 5/5
-              </div>
-              <div class="">
-                From Kashif
-              </div>
-              <div class="">
-                31st June
-              </div>
-            </div>
-          </div>
-
-          <div class="feedback__panel">
-            <div class="feedback__top">
-              <div class="feedback__top__description">
-                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
-              </div>
-            </div>
-            <div class="feedback__bottom">
-              <div class="">
-                Rating: 5/5
-              </div>
-              <div class="">
-                From Kashif
-              </div>
-              <div class="">
-                31st June
-              </div>
-            </div>
-          </div>
-
-          <div class="feedback__panel">
-            <div class="feedback__top">
-              <div class="feedback__top__description">
-                Great Tour. Enjoyed sightseeing with you and I look forward to the next.
-              </div>
-            </div>
-            <div class="feedback__bottom">
-              <div class="">
-                Rating: 5/5
-              </div>
-              <div class="">
-                From Kashif
-              </div>
-              <div class="">
-                31st June
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
