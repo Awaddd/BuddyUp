@@ -24,7 +24,8 @@ a{
   justify-self: center; /*Horizontal center*/
 
   /*Style the content*/
-  background-color: #ffffff;
+  background-color: #684efb;
+  color: #fff;
   /*width: 364px;*/
   /*height: 412px;*/
   width: 320px;
@@ -84,7 +85,8 @@ a{
 
   transition: 0.5s;
   /*Style the content*/
-  background-color: #ffffff;
+  background-color: #684efb;
+  color: #fff;
   width: 320px;
   height: 420px;
   padding: 20px 40px 10px 40px;
