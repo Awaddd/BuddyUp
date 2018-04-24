@@ -60,9 +60,9 @@
 
           <!-- <p class="register__footer">Already got an account?<a href="index.php">Sign in</a></p> -->
             <div class="mainBtn">
-              <button class="btn control" type="button" id="nextBtn"> Next </button>
-              <button class="btn control" type="button" id="backBtn"> Back </button>
-              <button class="btn success" type="submit" id="submitBtn"> Submit </button>
+              <button class="btn-same control" type="button" id="nextBtn"> Next </button>
+              <button class="btn-same control" type="button" id="backBtn"> Back </button>
+              <button class="btn-same success" type="submit" id="submitBtn"> Submit </button>
 
             </div>
 
