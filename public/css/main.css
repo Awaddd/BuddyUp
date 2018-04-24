@@ -57,6 +57,7 @@ a{
   grid-template-columns: max-content 1fr;
   grid-column-gap: 5px;
   align-self: center;
+  color: greenyellow;
 }
 
 
