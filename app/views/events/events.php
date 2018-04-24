@@ -22,7 +22,7 @@
 
       <div class="event__window__content">
 
-        <div class="event__panel">
+        <!-- <div class="event__panel">
           <div class="event__panel__content">
             <div class="event__panel__header">
               <div class="event__title">Picnic
@@ -36,7 +36,7 @@
           <span class="event__panel__exit">
             &times;
           </span>
-        </div>
+        </div> -->
 
         <?php foreach ($data['events'] as $event):
           // $reminderTime = date(' g:i A, d M', strtotime($event->ReminderTime));
