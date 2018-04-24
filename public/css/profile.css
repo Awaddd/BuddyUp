@@ -209,6 +209,7 @@
   margin: 0 auto;
   max-height: 370px;
   overflow-y: auto;
+  grid-gap: 30px;
 }
 
 .feedback__panel{
