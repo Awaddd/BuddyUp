@@ -43,6 +43,8 @@ a{
 .login__form{
   /*background: #258f54; identifying colour*/
   display: grid;
+  grid-gap: 20px;
+  grid-template-rows: max-content 1fr max-content;
 }
 .login__inputs{
   display: grid;
@@ -54,6 +56,7 @@ a{
   grid-template-columns: max-content 1fr;
   grid-column-gap: 5px;
   align-self: center;
+  justify-self: center;
 }
 
 .login__signup a{
@@ -246,6 +249,8 @@ a{
     box-shadow: none;
     background: none;
     color: black;
+    padding: 0;
+    
   }
 
   .register__content{
@@ -255,6 +260,7 @@ a{
     box-shadow: none;
     background: none;
     color: black;
+    padding: 0;
   }
 
   .mainBtn{
