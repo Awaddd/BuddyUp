@@ -15,13 +15,11 @@
     <div class="nav__logo">
       <p class="main__logo">Buddy<span class="main__logo__up">UP</span></p>
     </div>
-    <div class="nav__logout">
-      <div class="nav__links">
+    <div class="nav__links">
         <a href="<?php echo URLROOT;?>/home">Home</a>
         <a href="<?php echo URLROOT;?>/buddies/buddies">Buddies</a>
         <a href="<?php echo URLROOT;?>/profiles">Profile</a>
         <a href="<?php echo URLROOT;?>/events">Events</a>
         <a href="<?php echo URLROOT;?>/users/logout" class="newBtn logout">LOGOUT</a>
-      </div>
     </div>
   </div>
