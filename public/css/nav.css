@@ -67,10 +67,24 @@ a{
     display: none;
   }
 
+  .side-menu{
+    color: #fff;
+    background: #6B12F2;
+    position: fixed;
+    height: 100%;
+    top: 0;    
+  }
+
   .sidemenu-btn-open{
     display: block;
     justify-self: end;
     cursor: pointer;
+  }
+
+  .sidemenu-btn-close{
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.3rem;
   }
 
 
