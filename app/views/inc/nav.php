@@ -24,7 +24,7 @@
     </div>
 
     <div class="sidemenu-btn-open">
-      <a href="" id="openSideMenu">
+      <div id="openSideMenu">
         <svg width="30" height="30">
           <path d="M0,5 30, 5" stroke="#fff"
           stroke-width="5"/>
@@ -33,7 +33,7 @@
           <path d="M0,23 30, 23" stroke="#fff"
           stroke-width="5"/>
         </svg>
-      </a>
+      </div>
     </div>
 
     <div id="side-menu" class="side-menu">
