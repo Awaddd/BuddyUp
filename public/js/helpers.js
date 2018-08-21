@@ -147,14 +147,15 @@ sideMenu.hide();
 openSideMenu.on('click', function(){
 
   sideMenu.show();
-  $('.openSideMenu').animate({"margin-left": '-=250'});
-  
+  openSideMenu.animate({"margin-left": '-=250'});
+  openSideMenu.style.marginLeft = "10px";
   openSideMenu.hide();
 
 });
 closeSideMenu.on('click', function(){
   openSideMenu.show();
   $('.openSideMenu').animate({"margin-left": '+=250'});
+  openSideMenu.style.marginLeft = "350px";
 
   sideMenu.hide();
 });
