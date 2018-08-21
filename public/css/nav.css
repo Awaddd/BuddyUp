@@ -76,6 +76,15 @@ a{
     top: 0;
     width: 80%;
     display: grid;
+    transition: 0.5s;
+    padding: 0 1rem;
+  }
+
+  .sidemenu-head{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+    box-sizing: border-box;
   }
 
   .sidemenu-btn-open{

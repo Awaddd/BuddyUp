@@ -142,6 +142,8 @@ var openSideMenu = $("#openSideMenu");
 var closeSideMenu = $("#closeSideMenu");
 var sideMenu = $("#sideMenu");
 
+sideMenu.hide();
+
 openSideMenu.on('click', function(){
   sideMenu.show();
   openSideMenu.hide();
