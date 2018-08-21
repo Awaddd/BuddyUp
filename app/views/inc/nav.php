@@ -24,7 +24,7 @@
     </div>
 
     <div class="sidemenu-btn-open">
-      <a href="#" id="openSideMenu">
+      <a href="" id="openSideMenu">
         <svg width="30" height="30">
           <path d="M0,5 30, 5" stroke="#fff"
           stroke-width="5"/>
@@ -37,7 +37,7 @@
     </div>
 
     <div id="side-menu" class="side-menu">
-      <a href="#" class="sidemenu-btn-close" id="closeSideMenu">&times;</a>
+      <a href="" class="sidemenu-btn-close" id="closeSideMenu">&times;</a>
       <a href="<?php echo URLROOT;?>/home">Home</a>
       <a href="<?php echo URLROOT;?>/buddies/buddies">Buddies</a>
       <a href="<?php echo URLROOT;?>/profiles">Profile</a>
