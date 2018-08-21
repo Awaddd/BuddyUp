@@ -35,7 +35,7 @@
     </div>
 
     <div id="sideMenu" class="side-menu">
-      <a href="" class="sidemenu-btn-close" id="closeSideMenu">&times;</a>
+      <div class="sidemenu-btn-close" id="closeSideMenu">&times;</div>
       <a href="<?php echo URLROOT;?>/home">Home</a>
       <a href="<?php echo URLROOT;?>/buddies/buddies">Buddies</a>
       <a href="<?php echo URLROOT;?>/profiles">Profile</a>
