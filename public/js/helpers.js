@@ -143,9 +143,11 @@ var closeSideMenu = $("close-side-menu");
 var sideMenu = $("side-menu");
 
 openSideMenu.on('click', function(){
+  console.log("open!");
   sideMenu.show();
 });
 closeSideMenu.on('click', function(){
+  console.log("closed!");
   sideMenu.hide();
 });
 

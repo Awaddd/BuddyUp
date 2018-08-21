@@ -52,12 +52,14 @@ a{
 @media screen and  (max-width:450px) {
 
   .nav__logo{
-    justify-self: center;
+    justify-self: start;
   }
 
   .nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+    box-sizing: border-box;
   }
 
   .nav__links{
@@ -67,7 +69,7 @@ a{
 
   .sidemenu-btn-open{
     display: block;
-    justify-self: center;
+    justify-self: end;
   }
 
 
