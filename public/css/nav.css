@@ -57,7 +57,7 @@ a{
 
   .nav {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .nav__links{
@@ -67,6 +67,7 @@ a{
 
   .sidemenu-btn-open{
     display: block;
+    justify-self: center;
   }
 
 

@@ -20,7 +20,7 @@
 
 .buddy__title{
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 10vh;
   justify-self: cover;
   text-align: center;
   margin-top: 25px;
@@ -88,6 +88,10 @@
 
 /* Laptop queries below */
 @media only screen  and (min-width: 800px) {
+
+  .buddy__title{
+  }
+
   .buddy__card{
 
   }
@@ -135,7 +139,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
-    
+
   }
 
   .buddy__card{
