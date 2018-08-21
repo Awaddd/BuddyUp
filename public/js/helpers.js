@@ -143,11 +143,11 @@ var closeSideMenu = $("#closeSideMenu");
 var sideMenu = $("#sideMenu");
 
 openSideMenu.on('click', function(){
-  console.log("open!");
   sideMenu.show();
+  openSideMenu.hide();
 });
 closeSideMenu.on('click', function(){
-  console.log("closed!");
+  openSideMenu.show();
   sideMenu.hide();
 });
 

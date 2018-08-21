@@ -60,6 +60,7 @@ a{
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
     box-sizing: border-box;
+    width: 100%;
   }
 
   .nav__links{
@@ -72,7 +73,9 @@ a{
     background: #6B12F2;
     position: fixed;
     height: 100%;
-    top: 0;    
+    top: 0;
+    width: 80%;
+    display: grid;
   }
 
   .sidemenu-btn-open{

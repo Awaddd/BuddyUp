@@ -35,10 +35,15 @@
     </div>
 
     <div id="sideMenu" class="side-menu">
-      <div class="sidemenu-btn-close" id="closeSideMenu">&times;</div>
-      <a href="<?php echo URLROOT;?>/home">Home</a>
-      <a href="<?php echo URLROOT;?>/buddies/buddies">Buddies</a>
-      <a href="<?php echo URLROOT;?>/profiles">Profile</a>
-      <a href="<?php echo URLROOT;?>/events">Events</a>
+      <div class="sidemenu-head">
+        <p class="main__logo">Buddy<span class="main__logo__up">UP</span></p>
+        <div class="sidemenu-btn-close" id="closeSideMenu">&times;</div>
+      </div>
+      <div class="sidemenu-links">
+        <a href="<?php echo URLROOT;?>/home">Home</a>
+        <a href="<?php echo URLROOT;?>/buddies/buddies">Buddies</a>
+        <a href="<?php echo URLROOT;?>/profiles">Profile</a>
+        <a href="<?php echo URLROOT;?>/events">Events</a>
+      </div>
     </div>
   </div>
