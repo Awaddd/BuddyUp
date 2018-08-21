@@ -141,7 +141,7 @@ manage_rec_exit.on('click', function(){
 var openSideMenu = $("#openSideMenu");
 var closeSideMenu = $("closeSideMenu");
 var sideMenu = $("side-menu");
-
+sideMenu.hide();
 openSideMenu.on('click', function(){
   console.log("open!");
   sideMenu.show();
