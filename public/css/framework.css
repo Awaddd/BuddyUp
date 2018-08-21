@@ -37,11 +37,9 @@ html, body{
 }
 
 #spinner-text{
-  position: absolute;
+  position: fixed;
   /* margin: 300px auto; */
-  top: 55%;
-  left: 45%;
-  font-size: 1.5rem;
+  font-size: 4vh;
   font-weight: 600;
   animation: fadein 3s;
   color: #fff;

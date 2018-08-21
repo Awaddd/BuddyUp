@@ -74,12 +74,15 @@ a{
     position: fixed;
     height: 100%;
     top: 0;
-    width: 80%;
+    /* width: 80%; */
     display: grid;
     grid-gap: 20px;
     transition: 2s;
     padding: 0 1rem;
     grid-template-rows: max-content 1fr;
+
+    width: -250px;
+    margin-left: -250px;
   }
 
   .sidemenu-head{

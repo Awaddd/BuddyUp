@@ -145,8 +145,19 @@ var sideMenu = $("#sideMenu");
 sideMenu.hide();
 
 openSideMenu.on('click', function(){
+
+  if($(this).css("margin-left") == "250px")
+  {
+      $('.openSideMenu').animate({"margin-left": '-=250'});
+  }
+  else
+  {
+      $('.openSideMenu').animate({"margin-left": '+=250'});
+  }
+
   sideMenu.show();
   openSideMenu.hide();
+
 });
 closeSideMenu.on('click', function(){
   openSideMenu.show();
@@ -160,6 +171,11 @@ closeSideMenu.on('click', function(){
 //Nav links
 $(document).ready(function() {
     $(".nav__links [href]").each(function() {
+        if (this.href == window.location.href) {
+            $(this).addClass("current");
+        }
+    });
+    $(".sidemenu-links [href]").each(function() {
         if (this.href == window.location.href) {
             $(this).addClass("current");
         }
@@ -183,7 +199,8 @@ if($("#buddybody").length > 0){
         $("#spinner-text").hide();
       }
 
-      setTimeout(spinner, 1500);
+      setTimeout(spinner, 9000000);
+      // setTimeout(spinner, 1500);
 
 
     });
