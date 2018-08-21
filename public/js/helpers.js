@@ -138,8 +138,8 @@ manage_rec_exit.on('click', function(){
 
 
 // Nav
-var openSideMenu = $("#open-side-menu");
-var closeSideMenu = $("close-side-menu");
+var openSideMenu = $("#openSideMenu");
+var closeSideMenu = $("closeSideMenu");
 var sideMenu = $("side-menu");
 
 openSideMenu.on('click', function(){

@@ -23,8 +23,7 @@
         <a href="<?php echo URLROOT;?>/users/logout" class="newBtn logout">LOGOUT</a>
     </div>
 
-    <div class="sidemenu-btn-open">
-      <div id="openSideMenu">
+    <div class="sidemenu-btn-open" id="openSideMenu">
         <svg width="30" height="30">
           <path d="M0,5 30, 5" stroke="#fff"
           stroke-width="5"/>
@@ -33,7 +32,6 @@
           <path d="M0,23 30, 23" stroke="#fff"
           stroke-width="5"/>
         </svg>
-      </div>
     </div>
 
     <div id="side-menu" class="side-menu">

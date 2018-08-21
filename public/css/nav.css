@@ -70,6 +70,7 @@ a{
   .sidemenu-btn-open{
     display: block;
     justify-self: end;
+    cursor: pointer;
   }
 
 
