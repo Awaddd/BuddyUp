@@ -74,10 +74,13 @@ a{
     position: fixed;
     height: 100%;
     top: 0;
-    width: 80%;
+    /* width: 80%; */
+    width: 0;
     display: grid;
+    grid-gap: 20px;
     transition: 0.5s;
     padding: 0 1rem;
+    grid-template-rows: max-content 1fr;
   }
 
   .sidemenu-head{
@@ -85,6 +88,17 @@ a{
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
     box-sizing: border-box;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .sidemenu-links a {
+    display: grid;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    grid-gap: 20px;
+    margin: 20px;
   }
 
   .sidemenu-btn-open{
@@ -96,7 +110,8 @@ a{
   .sidemenu-btn-close{
     cursor: pointer;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 3rem;
+    justify-self: end;
   }
 
 
