@@ -146,21 +146,16 @@ sideMenu.hide();
 
 openSideMenu.on('click', function(){
 
-  if($(this).css("margin-left") == "250px")
-  {
-      $('.openSideMenu').animate({"margin-left": '-=250'});
-  }
-  else
-  {
-      $('.openSideMenu').animate({"margin-left": '+=250'});
-  }
-
   sideMenu.show();
+  $('.openSideMenu').animate({"margin-left": '-=250'});
+  
   openSideMenu.hide();
 
 });
 closeSideMenu.on('click', function(){
   openSideMenu.show();
+  $('.openSideMenu').animate({"margin-left": '+=250'});
+
   sideMenu.hide();
 });
 
