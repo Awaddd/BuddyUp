@@ -34,7 +34,7 @@
         </svg>
     </div>
 
-    <div id="side-menu" class="side-menu">
+    <div id="sideMenu" class="side-menu">
       <a href="" class="sidemenu-btn-close" id="closeSideMenu">&times;</a>
       <a href="<?php echo URLROOT;?>/home">Home</a>
       <a href="<?php echo URLROOT;?>/buddies/buddies">Buddies</a>
