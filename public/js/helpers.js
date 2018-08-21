@@ -137,8 +137,17 @@ manage_rec_exit.on('click', function(){
 });
 
 
+// Nav
+var openSideMenu = $("#open-side-menu");
+var closeSideMenu = $("close-side-menu");
+var sideMenu = $("side-menu");
 
-
+openSideMenu.on('click', function(){
+  sideMenu.show();
+});
+closeSideMenu.on('click', function(){
+  sideMenu.hide();
+});
 
 
 

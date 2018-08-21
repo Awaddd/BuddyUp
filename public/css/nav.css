@@ -41,17 +41,34 @@ a{
   font-size: 1.1rem;
 }
 
+.side-menu {
+  display: none;
+}
+
+.sidemenu-btn-open{
+  display: none;
+}
+
 @media screen and  (max-width:450px) {
 
   .nav__logo{
     justify-self: center;
   }
+
   .nav {
     display: grid;
     grid-template-columns: 1fr;
   }
+
   .nav__links{
     padding-left: 10px;
+    display: none;
   }
+
+  .sidemenu-btn-open{
+    display: block;
+  }
+
+
 
 }

@@ -23,8 +23,8 @@
         <a href="<?php echo URLROOT;?>/users/logout" class="newBtn logout">LOGOUT</a>
     </div>
 
-    <div class="open-slide">
-      <a href="#">
+    <div class="sidemenu-btn-open">
+      <a href="#" id="openSideMenu">
         <svg width="30" height="30">
           <path d="M0,5 30, 5" stroke="#fff"
           stroke-width="5"/>
@@ -34,5 +34,13 @@
           stroke-width="5"/>
         </svg>
       </a>
+    </div>
+
+    <div id="side-menu" class="side-menu">
+      <a href="#" class="sidemenu-btn-close" id="closeSideMenu">&times;</a>
+      <a href="<?php echo URLROOT;?>/home">Home</a>
+      <a href="<?php echo URLROOT;?>/buddies/buddies">Buddies</a>
+      <a href="<?php echo URLROOT;?>/profiles">Profile</a>
+      <a href="<?php echo URLROOT;?>/events">Events</a>
     </div>
   </div>
