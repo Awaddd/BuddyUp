@@ -478,7 +478,7 @@ background: linear-gradient(to right, #4F12D2, #3e03bd); /* W3C, IE 10+/ Edge, F
 /*Banners end*/
 
 .title{
-  font-size: 3rem;
+  font-size: 4vh;
   justify-self: cover;
   text-align: center;
   color: #fff;

@@ -14,13 +14,13 @@
   background: linear-gradient(to bottom right, #35087A, #1B043D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   min-height: 100%;
   display: grid;
-  grid-template-rows: max-content max-content 1fr;
+  /* grid-template-rows: max-content max-content 1fr; */
   grid-gap: 25px;
 }
 
 .buddy__title{
   color: #fff;
-  font-size: 10vh;
+  font-size: 3vh;
   justify-self: cover;
   text-align: center;
   margin-top: 25px;
@@ -88,10 +88,6 @@
 
 /* Laptop queries below */
 @media only screen  and (min-width: 800px) {
-
-  .buddy__title{
-  }
-
   .buddy__card{
 
   }
@@ -120,11 +116,12 @@
     background: linear-gradient(to bottom right, #35087A, #1B043D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height: 100%;
     display: grid;
-    grid-template-rows: max-content max-content 1fr;
+    /* grid-template-rows: max-content max-content 1fr; */
+    grid-template-rows: max-content max-content max-content;
+    grid-gap: 50px;
   }
 
   .buddy__title{
-    font-size: 3rem;
     justify-self: cover;
     text-align: center;
     margin-bottom: 75px;
